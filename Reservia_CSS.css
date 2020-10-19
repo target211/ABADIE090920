@@ -1,0 +1,23 @@
+.Logo_Site
+{
+    width: 25%;
+}
+
+div
+{
+    border : 2px black solid;
+    min-width: 10%;
+    width: 50%;
+    padding: 12px;
+    margin: 12px;
+}
+
+span
+{
+    border : 2px black solid;
+    min-width: 10%;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+
