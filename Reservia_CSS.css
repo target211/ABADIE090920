@@ -7,17 +7,81 @@ div
 {
     border : 2px black solid;
     min-width: 10%;
-    width: 50%;
-    padding: 12px;
-    margin: 12px;
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
 }
 
+/* Onglet menu nav*/
 span
 {
     border : 2px black solid;
     min-width: 10%;
-    width: 50%;
-    padding: 10px;
-    margin: 10px;
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
 }
 
+/* initialisation de la police d'ecriture*/
+@font-face {
+    font-family: 'Reservia';
+    src: url('Raleway-VariableFont_wght.ttf');
+}
+
+/* Police d'ecriture pour tout les textes*/
+*{
+    font-family: Reservia, Impact;
+}
+
+
+/* Toute la page */
+body
+{
+    background-color: blanc; /* Le fond de la page sera blanc */
+    color: black; /* Le texte de la page sera noir */
+}
+
+
+/* --------------- Zone Hebergement --------------------- */
+
+/* titre */
+h3{
+    font-weight: bold;
+}
+
+/* La plus grande section Hebergement */
+.Zone_Annonce{
+    background-color: #F2F2F2; /* Le fond de la page sera gris */
+    border-radius: 10px;
+}
+
+/* Regroupe les annonces */
+.Bloc_Annonce{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* chaque annonce indépendante */
+.Annonce{
+    display: flex;
+    flex-direction: column;
+
+    border : 2px black solid;
+    border-radius: 10px;
+    min-width: 10%;
+    width: 20%;
+    padding: 5x;
+    margin: 5px;
+    max-height: 20%;
+}
+
+/* titre de l'annonce a mettre en gras*/
+.P_Annonce{
+    font-weight: bold;
+}
+
+/* texte pour afficher plus d'annonce */
+.Afficher_Plus{
+    font-weight: bold;
+}

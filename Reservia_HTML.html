@@ -1,54 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="Reservia_CSS.css" />
-        <title>Site Reservia</title>
-    </head>
 
-    <body>
-        
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Reservia_CSS.css" />
+    <title>Site Reservia</title>
+</head>
+
+<body>
+
     <!-- HEADER -->
     <header>
         <div>
-            <p>
-                <img class="Logo_Site" src="Logo_Reservia.png" alt="Logo du site Reservia" title="Logo du site Réservia" /> 
+            <!-- Texte description site -->
+            <div>
+                <p><strong>Trouvez votre hébergement pour des vacances de rêve</strong> <br />
+                    en plein centre ville ou en pleine nature</p>
+            </div>
 
-                
+            <!-- Recherche -->
+            <div>
+                <p>Zone recherche selectionnable</p>
+            </div>
+
+            <!-- Filtre recherche -->
+            <div>
+                <p>liste filtre recherche</p>
+            </div>
+
+            <!-- Texte supplémentaire -->
+            <p>[logo I]Plus de 500 logements sont disponible dans cette ville</p>
+        </div>
+    </header>
+
+    <!-- Menu Navigation -->
+    <nav>
+        <div>
+            <p>
+                <img class="Logo_Site" src="Logo_Reservia.png" alt="Logo du site Reservia"
+                    title="Logo du site Réservia" />
+
                 <!-- Menu avec onglets alignés-->
                 <span>Hébergement</span><span>Activité</span><span>S'inscrire</span>
             </p>
         </div>
+    </nav>
 
-    </header>
+    <!-- Zone Hébergement -->
+    <section class="Zone_Annonce">
+        <h3>Hébergements à Marseille</h3>
 
-    <!-- Texte description site -->
-    <div>
-        <p><strong>Trouvez votre hébergement pour des vacances de rêve</strong> <br />
-        en plein centre ville ou en pleine nature</p>
-    </div>
+        <section class="Bloc_Annonce">
+            <!-- Annonce 1 -->
+            <section class="Annonce">
+                <img class="Image_Annonce" src="hebergement.jpg" alt="Image d'annonce" />
+                <p class="P_Annonce">Auberge de la Canebière<p />
+                <p>Nuit a partir de 25E</p>
+                <div> <img src="4 étoiles.jpg" alt="notation annonce" /></div>
+            </section>
 
-    <!-- Recherche -->
-    <div>
-        <p>Zone recherche selectionnable</p>
-    </div>
+            <!-- Annonce 2 -->
+            <section class="Annonce">
+                <img class="Image_Annonce" src="hebergement.jpg" alt="Image d'annonce" />
+                <p class="P_Annonce">Hotel du port</p>
+                <p>Nuit a partir de 52E</p>
+                <div> <img src="4 étoiles.jpg" alt="notation annonce" /></div>
+            </section>
 
-    <!-- Filtre recherche -->
-    <div>
-        <p>liste filtre recherche</p>
-    </div>
+            <!-- Annonce 3 -->
+            <section class="Annonce">
+                <img class="Image_Annonce" src="hebergement.jpg" alt="Image d'annonce" />
+                <p class="P_Annonce">Hotel du port</p>
+                <p>Nuit a partir de 52E</p>
+                <div> <img src="4 étoiles.jpg" alt="notation annonce" /></div>
+            </section>
 
-    <!-- Zone Annonce -->
-    <div>
-        <p>Hébergements à Marseille</p>
+            <!-- Annonce 4 -->
+            <section class="Annonce">
+                <img class="Image_Annonce" src="hebergement.jpg" alt="Image d'annonce" />
+                <p class="P_Annonce">Hotel du port</p>
+                <p>Nuit a partir de 52E</p>
+                <div> <img src="4 étoiles.jpg" alt="notation annonce" /></div>
+            </section>
 
-        <!-- image selectionnable des annonces / utiliser figure -->
-        <div>
-            <img class="Logo_Site" src="Logo_Reservia.png" alt="Logo du site Reservia" /> 
-        </div>
+            <!-- Annonce 5 -->
+            <section class="Annonce">
+                <img class="Image_Annonce" src="hebergement.jpg" alt="Image d'annonce" />
+                <p class="P_Annonce">Hotel du port</p>
+                <p>Nuit a partir de 52E</p>
+                <div> <img src="4 étoiles.jpg" alt="notation annonce" /></div>
+            </section>
+        </section>
 
-        <p>Afficher plus</p>
-    </div>
+        <p class="Afficher_Plus">Afficher plus</p>
+
+    </section>
 
     <!-- Zone populaire -->
     <div>
@@ -56,46 +102,47 @@
 
         <!-- image selectionnable dans Populaires-->
         <div>
-            <img class="Logo_Site" src="Logo_Reservia.png" alt="Logo du site Reservia" /> 
+            <img class="Logo_Site" src="Logo_Reservia.png" alt="Logo du site Reservia" />
         </div>
     </div>
 
-    <!-- Activité -->
+    <!-- Zone Activité -->
     <div>
         <p>Activités à Marseille</p>
 
         <!-- image selectionnable dans Activités-->
         <div>
-            <img class="Logo_Site" src="Logo_Reservia.png" alt="Logo du site Reservia" /> 
+            <img class="Logo_Site" src="Logo_Reservia.png" alt="Logo du site Reservia" />
         </div>
     </div>
 
     <!-- Footer -->
-<footer>
-<div>
-    <p>Footer</p>
-    <div>
-        <p><strong>A propos</strong></p>
-        <p>Fonctionnement du site</p>
-        <p>Conditions générales de vente</p>
-        <p>Données et confidentialité</p>
-    </div>
+    <footer>
+        <div>
+            <p>Footer</p><!-- a retirer-->
+            <div>
+                <p><strong>A propos</strong></p>
+                <p>Fonctionnement du site</p>
+                <p>Conditions générales de vente</p>
+                <p>Données et confidentialité</p>
+            </div>
 
-    <div>
-        <p><strong>Nos hébergements</strong></p>
-        <p>Charte qualité</p>
-        <p>Soumettre votre hôtel</p>
-    </div>
+            <div>
+                <p><strong>Nos hébergements</strong></p>
+                <p>Charte qualité</p>
+                <p>Soumettre votre hôtel</p>
+            </div>
 
-    <div>
-        <p><strong>Assistance</strong></p>
-        <p>Centre d'aide</p>
-        <p>Nous contacter</p>
-    </div>
+            <div>
+                <p><strong>Assistance</strong></p>
+                <p>Centre d'aide</p>
+                <p>Nous contacter</p>
+            </div>
 
 
-</div>
-</footer>
+        </div>
+    </footer>
 
-    </body>
+</body>
+
 </html>
