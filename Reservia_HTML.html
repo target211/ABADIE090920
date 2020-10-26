@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="Reservia_CSS.css" />
+    <link rel="stylesheet" href="css\all.min.css">
     <title>Site Reservia</title>
 </head>
 
@@ -11,11 +12,25 @@
 
     <!-- HEADER -->
     <header>
+
+        <!-- Menu Navigation -->
+        <nav>
+            <div>
+                <p>
+                    <img class="logoSite" src="image\logo\Reservia.png" alt="Logo du site Reservia"
+                        title="Logo du site Réservia" />
+
+                    <!-- Menu avec onglets alignés-->
+                    <span>Hébergement</span><span>Activité</span><span>S'inscrire</span>
+                </p>
+            </div>
+        </nav>
+
         <div>
             <!-- Texte description site -->
             <div>
-                <p><strong>Trouvez votre hébergement pour des vacances de rêve</strong> <br />
-                    en plein centre ville ou en pleine nature</p>
+                <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong> <br />
+                    en plein centre ville ou en pleine nature</h1>
             </div>
 
             <!-- Recherche -->
@@ -33,86 +48,157 @@
         </div>
     </header>
 
-    <!-- Menu Navigation -->
-    <nav>
-        <div>
-            <p>
-                <img class="Logo_Site" src="Logo_Reservia.png" alt="Logo du site Reservia"
-                    title="Logo du site Réservia" />
-
-                <!-- Menu avec onglets alignés-->
-                <span>Hébergement</span><span>Activité</span><span>S'inscrire</span>
-            </p>
-        </div>
-    </nav>
-
     <!-- Zone Hébergement -->
-    <section class="Zone_Annonce">
-        <h3>Hébergements à Marseille</h3>
+    <section class="zoneAnnonce">
+        <h2 class="hébergementTitre">Hébergements à Marseille</h2>
 
-        <section class="Bloc_Annonce">
+        <div class="blocAnnonce">
             <!-- Annonce 1 -->
-            <section class="Annonce">
-                <img class="Image_Annonce" src="hebergement.jpg" alt="Image d'annonce" />
-                <p class="P_Annonce">Auberge de la Canebière<p />
-                <p>Nuit a partir de 25E</p>
-                <div> <img src="4 étoiles.jpg" alt="notation annonce" /></div>
-            </section>
+            <article class="annonce">
+                <a href="page_hebergement.html">
+                    <img class="imageAnnonce" src="image\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                        alt="Image d'annonce" />
+                </a>
+                <div class="sousTexteAnnonce">
+                    <h3 class="h3Annonce">Auberge de la Cannebière</h3>
+                    <p>Nuit à partir de 25€</p>
+                    <div>
+                        <i class="fas fa-star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </i>
+                    </div>
+                </div>
+            </article>
 
             <!-- Annonce 2 -->
-            <section class="Annonce">
-                <img class="Image_Annonce" src="hebergement.jpg" alt="Image d'annonce" />
-                <p class="P_Annonce">Hotel du port</p>
-                <p>Nuit a partir de 52E</p>
-                <div> <img src="4 étoiles.jpg" alt="notation annonce" /></div>
-            </section>
+            <article class="annonce">
+                <a href="page_hebergement.html">
+                    <img class="imageAnnonce" src="image\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                        alt="Image d'annonce" />
+                </a>
+
+                <div class="sousTexteAnnonce">
+                    <h3 class="h3Annonce">Hôtel du port</h3>
+                    <p>Nuit à partir de 52€</p>
+                    <div>
+                        <i class="fas fa-star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </i>
+                    </div>
+                </div>
+            </article>
 
             <!-- Annonce 3 -->
-            <section class="Annonce">
-                <img class="Image_Annonce" src="hebergement.jpg" alt="Image d'annonce" />
-                <p class="P_Annonce">Hotel du port</p>
-                <p>Nuit a partir de 52E</p>
-                <div> <img src="4 étoiles.jpg" alt="notation annonce" /></div>
-            </section>
+            <article class="annonce">
+                <a href="page_hebergement.html">
+                    <img class="imageAnnonce" src="image\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                        alt="Image d'annonce" />
+                </a>
+                <div class="sousTexteAnnonce">
+                    <h3 class="h3Annonce">Hôtel Les mouettes</h3>
+                    <p>Nuit à partir de 76€</p>
+                    <div>
+                        <i class="fas fa-star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </i>
+                    </div>
+                </div>
+            </article>
+            </article>
 
             <!-- Annonce 4 -->
-            <section class="Annonce">
-                <img class="Image_Annonce" src="hebergement.jpg" alt="Image d'annonce" />
-                <p class="P_Annonce">Hotel du port</p>
-                <p>Nuit a partir de 52E</p>
-                <div> <img src="4 étoiles.jpg" alt="notation annonce" /></div>
-            </section>
+            <article class="annonce">
+                <a href="page_hebergement.html">
+                    <img class="imageAnnonce" src="image\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                        alt="Image d'annonce" />
+                </a>
+                <div class="sousTexteAnnonce">
+                    <h3 class="h3Annonce">Hôtel de la mer</h3>
+                    <p>Nuit à partir de 46€</p>
+                    <div>
+                        <i class="fas fa-star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </i>
+                    </div>
+                </div>
+            </article>
+            </article>
 
             <!-- Annonce 5 -->
-            <section class="Annonce">
-                <img class="Image_Annonce" src="hebergement.jpg" alt="Image d'annonce" />
-                <p class="P_Annonce">Hotel du port</p>
-                <p>Nuit a partir de 52E</p>
-                <div> <img src="4 étoiles.jpg" alt="notation annonce" /></div>
-            </section>
-        </section>
+            <article class="annonce">
+                <a href="page_hebergement.html">
+                    <img class="imageAnnonce" src="image\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                        alt="Image d'annonce" />
+                </a>
+                <div class="sousTexteAnnonce">
+                    <h3 class="h3Annonce">Auberge Le Panier</h3>
+                    <p>Nuit à partir de 23€</p>
+                    <div>
+                        <i class="fas fa-star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </i>
+                    </div>
+                </div>
+            </article>
+            </article>
 
-        <p class="Afficher_Plus">Afficher plus</p>
+            <!-- Annonce 6 -->
+            <article class="annonce">
+                <a href="page_hebergement.html">
+                    <img class="imageAnnonce" src="image\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                        alt="Image d'annonce" />
+                </a>
+                <div class="sousTexteAnnonce">
+                    <h3 class="h3Annonce">Hôtel chez Amina</h3>
+                    <p>Nuit à partir de 96€</p>
+                    <div>
+                        <i class="fas fa-star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <p class="afficherPlus">Afficher plus</p>
 
     </section>
 
     <!-- Zone populaire -->
     <div>
-        <p>Les plus populaires</p>
+        <h2>Les plus populaires</h2>
 
         <!-- image selectionnable dans Populaires-->
         <div>
-            <img class="Logo_Site" src="Logo_Reservia.png" alt="Logo du site Reservia" />
+            <img class="logoSite" src="Logo_Reservia.png" alt="Logo du site Reservia" />
         </div>
     </div>
 
     <!-- Zone Activité -->
     <div>
-        <p>Activités à Marseille</p>
+        <h2>Activités à Marseille</h2>
 
         <!-- image selectionnable dans Activités-->
         <div>
-            <img class="Logo_Site" src="Logo_Reservia.png" alt="Logo du site Reservia" />
+            <img class="logoSite" src="Logo_Reservia.png" alt="Logo du site Reservia" />
         </div>
     </div>
 
