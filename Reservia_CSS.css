@@ -16,40 +16,71 @@
 }
 
 
-/* Toute la page */
+/* Toute la page --------------------------------------------------------------*/
 body
 {
     background-color: white; /* Le fond de la page sera blanc */
     color: black; /* Le texte de la page sera noir */
 }
 
+/* texte a mettre en gras*/
+.enGras{
+    font-weight: bold;
+}
+
+/*couleur icone */
+.fas.fa-star.blue{
+color: #0065FC;
+}
+
+.fas.fa-star.grey{
+color: #F2F2F2;
+}
+
+/* reduction espace prit par les paragraphe */
+p{
+    margin: 5px;
+}
+/*cadre general des sections ------------------------------------------------*/
+
+/*titre des sections */
+.sectionTitre{
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: -10px;
+}
+
+/* Place les blocs hebergements et populaire cote a cote*/
+.placementBlocAnnonce{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* fin cadre general des sections ----------------------------------------------*/
 
 
 
 /* --------------- Zone Hebergement ------------------------------------------------------------------------------------- */
 
-.hébergementTitre{
-    padding-left: 20px;
-    padding-top: 40px;
-}
-
 /* La plus grande section Hebergement */
-.zoneAnnonce{
+
+.zoneAnnonceHebergement{
     background-color: #F2F2F2; /* Le fond de la page sera gris */
-    border-radius: 10px;
+    border-radius: 30px;
     width: 60%;
     height: 34%;
 }
 
 /* Regroupe les annonces */
-.blocAnnonce{
+.blocAnnonceHebergement{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 /* chaque annonce indépendante */
-.annonce{
+.annonceHebergement{
     /* flexbox */
     display: flex;
     flex-direction: column;
@@ -68,19 +99,20 @@ body
     display: inline-block;   
     padding-bottom: 0px; 
     overflow : hidden;
+
+    background-color: white;
 }
 
 /* Dimension Image */
 .imageAnnonce{
-    height: 61%;
+    height: 150px;
     width: 100%;
 }
 
-.sousTexteAnnonce{
+.sousTexteAnnonceHebergement{
     margin-left: 15px;
     margin-bottom: 5px;
 }
-
 
 /* titre de l'annonce a mettre en gras*/
 .h3Annonce{
@@ -97,8 +129,167 @@ body
     display: inline;
     display: inline-block;  
 }
+    
 
-/*couleur icone */
-.fas fa-star, .far fa-star{
-color: #0065FC;
+/* fin CSS Hebergement ------------------------------------------------*/
+
+
+
+
+/* début Zone Populaire ---------------------------------------------------------------------*/
+
+/* La plus grande section Hebergement */
+.zoneAnnoncePopulaire{
+    background-color: #F2F2F2; /* Le fond de la page sera gris */
+    border-radius: 30px;
+    width: 31%;
+    height: 34%;
 }
+
+/* Regroupe les annonces */
+.blocAnnoncePopulaire{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* chaque annonce indépendante */
+.annoncePopulaire{
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    overflow-x : hidden;
+
+    /* cadre */
+    border : 5px white solid;
+    border-radius: 30px;
+
+    /* dimension */
+    margin: 20px;
+    height: 23%;
+    width: 80%;
+    display: inline-block;   
+    padding-bottom: 0px; 
+    overflow : hidden;
+
+    background-color: white;
+}
+/* Dimension Image */
+.imageAnnonceFlottante{
+    height: 145px;
+    width: 40%;
+    float: left;
+}
+
+.sousTexteAnnoncePopulaire{
+    margin: 10px 10px 10px 44%;
+
+}
+
+/* fin Zone Populaire -------------------------------------------------*/
+
+
+
+
+
+/* Zone Activité -------------------------------------------------------*/
+
+/* bloc global activité */
+.zoneActivites{
+    height: 26%;
+    width: 92%;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+/* les 4 blocs qui divisent le bloc global d'Activites */
+.blocActivites{
+    margin: 10px;
+    margin-bottom: 15px;
+
+    height: 500px;
+    width: 92%;
+}
+
+/* texte sous les images */
+.sousTexteActivites{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+/* placer activité l'une sur l'autre */
+.dispositionActivitéSimpleBloc{
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 30px;
+    overflow-x : hidden;
+    box-shadow: 0px 4px 5px #F2F2F2;
+}
+.dispositionActivitéDoubleBloc{
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 30px;
+    overflow-x : hidden;
+    box-shadow: 0px 4px 5px #F2F2F2;
+
+    margin: 10px;
+}
+
+/* Dimension Image Activité */
+.imageActivitesSimpleBloc{
+    height: 460px;
+    width: 100%;
+}
+.imageActivitesDoubleBloc{
+    height: 200px;;
+    width: 100%;
+}
+
+/* Placer Activité cote a cote */
+.annonceActivites{
+    display: flex;
+}
+
+/* dimension image de taille différente */
+.imageActivitesDuFortGrande{
+    height: 225px;
+    width: 100%;
+}
+.imageActivitesDeFrioulPetite{
+    height: 175px;
+    width: 100%;
+}
+
+/* fin Zone Activité ----------------------------------------------------*/
+
+
+/* footer ---------------------------------------------------------------*/
+
+.zoneFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    margin: 30px;
+    padding: 30px;
+    height: 160px;
+
+    background-color: #F2F2F2;
+}
+
+.blocFooter{
+    margin-right: 200px;
+}
+
+.zoneFooter p{
+    margin: 15px;
+}
+/* fin du footer --------------------------------------------------------*/
+
+
+
+
