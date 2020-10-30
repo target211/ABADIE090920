@@ -14,19 +14,26 @@
     <header>
 
         <!-- Menu Navigation -->
-        <nav>
-            <div>
-                <p>
+        <nav class="menuNavigation">
                     <img class="logoSite" src="image\logo\Reservia.png" alt="Logo du site Reservia"
                         title="Logo du site Réservia" />
 
-                    <!-- Menu avec onglets alignés-->
-                    <span>Hébergement</span><span>Activité</span><span>S'inscrire</span>
-                </p>
+                <!-- Menu avec onglets alignés-->
+                <div class="menuNavigationOnglet">
+                <div class="menuHebergement">
+                    <a href="#hebergement">Hébergement</a>
+                </div>
+                <div class="menuActivite">
+                    <a href="#activite">Activité</a>
+                </div>
+                <div class="menuSInscrire">
+                    <a href="#SInscrire">S'inscrire</a>
+                </div>
             </div>
         </nav>
 
         <div>
+            <!-- Header sans le menu nav -->
             <!-- Texte description site -->
             <div>
                 <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong> <br />
@@ -34,17 +41,60 @@
             </div>
 
             <!-- Recherche -->
-            <div>
-                <p>Zone recherche selectionnable</p>
-            </div>
+            <section class="cadreRecherche">
+                <div class="iconeRecherche">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="boxRecherche">
+                    <form method="post" action="traitement.php">
+                        <p>
+                            <input type="search" name="recherche" placeholder="Marseille,France" />
+                        </p>
+                    </form>
+                </div>
+                <div class="boutonRecherche">
+                    <p class="titreBoutonRecherche">Rechercher</p>
+                </div>
+            </section>
 
             <!-- Filtre recherche -->
-            <div>
-                <p>liste filtre recherche</p>
-            </div>
+            Header sans le menu nav <section class="barreFiltre">
+                <div class="nomBarreFiltre">
+                    <p class="motFiltre">Filtres</p>
+                </div>
+                <div class="boutonFiltre">
+                    <div class="iconeFiltre">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <p class="categorieFiltre">Économique</p>
+                </div>
+                <div class="boutonFiltre">
+                    <div class="iconeFiltre">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <p class="categorieFiltre">Familial</p>
+                </div>
+                <div class="boutonFiltre">
+                    <div class="iconeFiltre">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <p class="categorieFiltre">Romantique</p>
+                </div>
+                <div class="boutonFiltre">
+                    <div class="boutonAnimauxAutorises">
+                        <div class="iconeFiltre">
+                            <i class="fas fa-dog"></i>
+                        </div>
+                        <p class="categorieFiltre">Animaux Autorisés</p>
+                    </div>
+                </div>
+            </section>
 
             <!-- Texte supplémentaire -->
-            <p>[logo I]Plus de 500 logements sont disponible dans cette ville</p>
+            <div class="information">
+                <i class="fas fa-info-circle"></i>
+                <p>Plus de 500 logements sont disponible dans cette ville</p>
+            </div>
         </div>
     </header>
 
@@ -52,7 +102,7 @@
     <div class="placementBlocAnnonce">
         <!-- Zone Hébergement --------------------------------------------------->
         <section class="zoneAnnonceHebergement">
-            <h2 class="sectionTitre">Hébergements à Marseille</h2>
+            <h2 class="sectionTitre" id="hebergement">Hébergements à Marseille</h2>
 
             <div class="blocAnnonceHebergement">
                 <!-- Annonce 1 -->
@@ -184,7 +234,11 @@
         <!-- Zone populaire ------------------------------------------------------>
         <section class="zoneAnnoncePopulaire">
             <div>
-                <h2 class="sectionTitre">Les plus populaires</h2>
+                <div class="titrePopulaire">
+                    <h2 class="sectionTitre">Les plus populaires</h2>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+
 
                 <!-- image selectionnable dans Populaires-->
                 <div class="blocAnnoncePopulaire">
@@ -256,7 +310,7 @@
 
     <!-- Zone Activité ------------------------------------------------------>
     <div class="zoneActivites">
-        <h2 class="sectionTitre">Activités à Marseille</h2>
+        <h2 class="sectionTitre" id="activite">Activités à Marseille</h2>
 
         <!-- image selectionnable dans Activités-->
         <div>
