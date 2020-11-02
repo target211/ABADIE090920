@@ -1,7 +1,8 @@
 .logoSite
 {
-    width: 150px;
+    width: 40%;
 }
+
 
 /* initialisation de la police d'ecriture*/
 @font-face {
@@ -13,6 +14,7 @@
 *{
     font-family: Reservia, Impact;
 }
+
 
 /* Toute la page --------------------------------------------------------------*/
 body
@@ -48,15 +50,11 @@ p{
     padding-bottom: -10px;
 }
 
-
 /* Place les blocs hebergements et populaire cote a cote*/
 .placementBlocAnnonce{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column-reverse;
 }
-
-
 
 /* fin cadre general des sections ----------------------------------------------*/
 
@@ -65,27 +63,28 @@ p{
 /*-------------------- Header ------------------------------------------------------------*/
 
 .menuNavigation{
-    display: flex;
-
     margin-top: 20px;
     margin-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .menuNavigationOnglet{
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap-reverse;
 
-    width: 300px;
+    width: 100%;
 
     padding-top: 20px;
-    padding-right: 30px;
+    padding-right: 50px;
 }
 
 .menuNavigationOnglet a{
-    color:#0065FC;
-    font-weight: bold;
+    font-size: 2em;
 }
-
 /* different onglet du menu */
 
 .menuHebergement:hover{
@@ -116,7 +115,7 @@ a{
     display: flex;
     flex-direction: row;
 
-    width: 600px;
+    width: 90%;
     height: 50px;
 
     margin: 30px;
@@ -125,7 +124,7 @@ a{
 /* premiere icone sur barre recherche */
 .iconeRecherche{
     background-color: #F2F2F2;
-    width: 50px;
+    width: 10%;
     height: 50px;
     border-radius: 10px 0 0 10px;
     margin-top: 5px;
@@ -136,56 +135,65 @@ a{
     padding: 19px;
 }
 
-
-/* bloc recherche -------------------------------------*/
+/* bloc recherche */
 .boxRecherche input{
     height: 50px;
     font-size: large;
     font-weight: bold;
     color: black;
+    width: 100%;
 }
 
 .boxRecherche{
     height: 50px;
     padding-left: 0px;
     padding-top: 0px;
+    width: 80%;
 }
 
 .boutonRecherche{
     background-color: #0065FC;
     height: 50px;
-    width: 150px;
+    width: 10%;
     margin-top: 5px;
     border-radius: 0 10px 10px 0;
 }
 
-.titreBoutonRecherche{
+/* active l'icone recherche */
+.fas.fa-search{
     margin-top: 15px;
     margin-left: 15px;
 
     font-size: large;
     font-weight: bold;
     color: white;
+
+    display: flex;
+    flex-direction: row;
 }
 
-/* desactive l'icone recherche */
-.fas.fa-search{
+/* desactive mot Recherche */
+.titreBoutonRecherche{
     display: none;
 }
+
+
+
 
 /* zone filtre ------------------------------*/
 
 .barreFiltre{
     display: flex;
+    flex-direction: column;
 
-    margin: 30px;
-    height: 50px;
-    width: 800px;
+    height: 200px;
+    width: 350px;
 }
 
 .nomBarreFiltre{
     margin-right: 90px;
     margin-top: 15px;
+    width: 300px;
 
     font-size: large;
     font-weight: bold;
@@ -201,9 +209,11 @@ a{
     font-size: large;
     font-weight: bold;
 }
-
+.filtreEconomiqueFamilialMiseEnPage{
+    display: flex;
+}
 .boutonFiltre:hover{
-        background-color: red;
+    background-color: red;
 }
 /* zone icone filtre */
 .iconeFiltre{
@@ -242,11 +252,6 @@ a{
     margin-top: 7px;
 }
 
-/* bloque html fait pour le portable */
-.filtreEconomiqueFamilialMiseEnPage{
-    display: none;
-}
-
 /* information -----------------------*/
 .information{
     display: flex;
@@ -260,23 +265,32 @@ a{
     border-radius: 50px;
 }
 
+/* bloque html fait pour le portable */
+.filtreTailleOrdinateur{
+    display: none;
+}
+
 
 /* --------------- Zone Hebergement ------------------------------------------------------------------------------------- */
 
 /* La plus grande section Hebergement */
 
-.zoneAnnonceHebergementOrdinateur{
+.zoneAnnonceHebergementPortable{
     background-color: #F2F2F2; /* Le fond de la page sera gris */
     border-radius: 30px;
-    width: 60%;
+    width: 100%;
     height: 34%;
+    border: 3px red solid;
 }
 
 /* Regroupe les annonces */
 .blocAnnonceHebergement{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
+    border: 3px blue solid;
+    width: 100%;
 }
 
 /* chaque annonce indépendante */
@@ -287,25 +301,22 @@ a{
     overflow-x : hidden;
 
     /* cadre */
-    border : 5px white solid;
+    border : 5px black solid;
     border-radius: 30px;
 
     /* dimension */
     margin: 20px;
-    height: 10%;
-    max-height: 10%;
-    width: 28%;
-    max-width: 28%;
+    width: 100%;
+    height: 300px;
     display: inline-block;   
-    padding-bottom: 0px; 
-    overflow : hidden;
+
 
     background-color: white;
 }
 
 /* Dimension Image */
 .imageAnnonce{
-    height: 150px;
+    height: 60%;
     width: 100%;
 }
 
@@ -324,17 +335,21 @@ a{
 .afficherPlus{
     font-weight: bold;
     padding-left: 20px;
-    margin: opx;
     
     display: inline;
     display: inline-block;  
 }
 
-
-/* fait disparaitre version portable */
-.zoneAnnonceHebergementPortable{
+/* fait disparaitre version Ordinateur */
+.zoneAnnonceHebergementOrdinateur{
     display: none;
 }
+
+/* fait apparaitre version portable */
+.zoneAnnonceHebergementPortable{
+    display: inline;
+}
+
 /* fin CSS Hebergement ------------------------------------------------*/
 
 
@@ -342,11 +357,11 @@ a{
 
 /* début Zone Populaire ---------------------------------------------------------------------*/
 
-/* La plus grande section Populaire */
+/* La plus grande section Hebergement */
 .zoneAnnoncePopulaire{
     background-color: #F2F2F2; /* Le fond de la page sera gris */
     border-radius: 30px;
-    width: 31%;
+    width: 100%;
     height: 34%;
 }
 
@@ -372,7 +387,7 @@ a{
     /* dimension */
     margin: 20px;
     height: 23%;
-    width: 80%;
+    width: 90%;
     display: inline-block;   
     padding-bottom: 0px; 
     overflow : hidden;
@@ -417,13 +432,13 @@ a{
     margin-top: 50px;
 }
 
-/* les 4 blocs qui divisent le bloc global d'Activites */
+/* les blocs qui divisent le bloc global d'Activites */
 .blocActivites{
     margin: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
-    height: 500px;
     width: 92%;
+    height: 300px;
 }
 
 /* texte sous les images */
@@ -434,7 +449,7 @@ a{
 }
 
 /* placer activité l'une sur l'autre */
-.dispositionActivitéSimpleBloc{
+.dispositionActivitéPortable{
     display: flex;
     flex-direction: column;
 
@@ -442,46 +457,29 @@ a{
     overflow-x : hidden;
     box-shadow: 0px 4px 5px #F2F2F2;
 }
-.dispositionActivitéDoubleBloc{
-    display: flex;
-    flex-direction: column;
-    
-    border-radius: 30px;
-    overflow-x : hidden;
-    box-shadow: 0px 4px 5px #F2F2F2;
 
-    margin: 10px;
-}
 
 /* Dimension Image Activité */
-.imageActivitesSimpleBloc{
-    height: 460px;
-    width: 100%;
-}
-.imageActivitesDoubleBloc{
-    height: 200px;;
+.imageActivitesPortable{
+    height: 250px;
     width: 100%;
 }
 
-/* Placer Activité cote a cote */
+/* Placer Activité en colonne */
 .annonceActivites{
     display: flex;
+    flex-direction: column;
 }
 
-/* dimension image de taille différente */
-.imageActivitesDuFortGrande{
-    height: 225px;
-    width: 100%;
-}
-.imageActivitesDeFrioulPetite{
-    height: 175px;
-    width: 100%;
-}
-
-/* bloque version portable de Activites */
-.blocActivitéPourPortable{
+/* bloque version ordi de Activites */
+.blocActivitéPourOrdi{
     display: none;
 }
+/* fait apparaitre bloc version portable de activites */
+.blocActivitéPourPortable{
+    display: inline;
+}
+
 /* fin Zone Activité ----------------------------------------------------*/
 
 
@@ -489,24 +487,23 @@ a{
 
 .zoneFooter{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
 
     margin: 30px;
     padding: 30px;
-    height: 160px;
 
     background-color: #F2F2F2;
 }
 
 .blocFooter{
     margin-right: 200px;
+    margin-bottom: 40px;
 }
 
 .zoneFooter p{
     margin: 15px;
 }
-
 /* fin du footer --------------------------------------------------------*/
 
 

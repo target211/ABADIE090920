@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="Reservia_CSS.css" />
     <link rel="stylesheet" href="css\all.min.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="Reservia_CSS_Portable.css" />
+
     <title>Site Reservia</title>
 </head>
 
@@ -15,11 +17,11 @@
 
         <!-- Menu Navigation -->
         <nav class="menuNavigation">
-                    <img class="logoSite" src="image\logo\Reservia.png" alt="Logo du site Reservia"
-                        title="Logo du site Réservia" />
+            <img class="logoSite" src="image\logo\Reservia.png" alt="Logo du site Reservia"
+                title="Logo du site Réservia" />
 
-                <!-- Menu avec onglets alignés-->
-                <div class="menuNavigationOnglet">
+            <!-- Menu avec onglets alignés-->
+            <div class="menuNavigationOnglet">
                 <div class="menuHebergement">
                     <a href="#hebergement">Hébergement</a>
                 </div>
@@ -53,27 +55,52 @@
                     </form>
                 </div>
                 <div class="boutonRecherche">
-                    <p class="titreBoutonRecherche">Rechercher</p>
+                    <i class="fas fa-search"></i>
+                    <p class="titreBoutonRecherche">Recherche</p>
                 </div>
             </section>
 
             <!-- Filtre recherche -->
-            Header sans le menu nav <section class="barreFiltre">
+            <section class="barreFiltre">
                 <div class="nomBarreFiltre">
                     <p class="motFiltre">Filtres</p>
                 </div>
-                <div class="boutonFiltre">
-                    <div class="iconeFiltre">
-                        <i class="fas fa-money-bill-wave"></i>
+                <!-- bloc pour les téléphones -->
+                <div class="filtreEconomiqueFamilialMiseEnPage">
+                    <div class="boutonFiltre">
+                        <div class="iconeFiltre">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <p class="categorieFiltre">Économique</p>
                     </div>
-                    <p class="categorieFiltre">Économique</p>
-                </div>
-                <div class="boutonFiltre">
-                    <div class="iconeFiltre">
-                        <i class="fas fa-child"></i>
+                    <div class="boutonFiltre">
+                        <div class="iconeFiltre">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <p class="categorieFiltre">Familial</p>
                     </div>
-                    <p class="categorieFiltre">Familial</p>
                 </div>
+                <!-- fin bloc pour téléphone -->
+
+                <!-- bloc pour l'ordinateur -->
+                <div class="filtreTailleOrdinateur">
+                    <div class="boutonFiltre">
+                        <div class="iconeFiltre">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <p class="categorieFiltre">Économique</p>
+                    </div>
+                </div>
+                <div class="filtreTailleOrdinateur">
+                    <div class="boutonFiltre">
+                        <div class="iconeFiltre">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <p class="categorieFiltre">Familial</p>
+                    </div>
+                </div>
+                <!-- fin bloc pour ordinateur -->
+
                 <div class="boutonFiltre">
                     <div class="iconeFiltre">
                         <i class="fas fa-heart"></i>
@@ -100,8 +127,8 @@
 
 
     <div class="placementBlocAnnonce">
-        <!-- Zone Hébergement --------------------------------------------------->
-        <section class="zoneAnnonceHebergement">
+<!-- Zone Hébergement --------------------------------------------------->
+        <section class="zoneAnnonceHebergementOrdinateur">
             <h2 class="sectionTitre" id="hebergement">Hébergements à Marseille</h2>
 
             <div class="blocAnnonceHebergement">
@@ -110,19 +137,21 @@
                     <a href="page_hebergement.html">
                         <img class="imageAnnonce" src="image\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                             alt="Image d'annonce" />
-                    </a>
-                    <div class="sousTexteAnnonceHebergement">
-                        <h3 class="h3Annonce">Auberge de la Cannebière</h3>
-                        <p>Nuit à partir de <span class="enGras">25€</span></p>
-                        <div>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star grey"></i>
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Auberge de la Cannebière</h3>
+                            <p>Nuit à partir de <span class="enGras">25€</span></p>
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
+
+                            </div>
 
                         </div>
-                    </div>
+                    </a>
                 </article>
 
                 <!-- Annonce 2 -->
@@ -130,19 +159,19 @@
                     <a href="page_hebergement.html">
                         <img class="imageAnnonce" src="image\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                             alt="Image d'annonce" />
-                    </a>
 
-                    <div class="sousTexteAnnonceHebergement">
-                        <h3 class="h3Annonce">Hôtel du port</h3>
-                        <p>Nuit à partir de 52<span class="enGras">€</span></p>
-                        <div>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Hôtel du port</h3>
+                            <p>Nuit à partir de 52<span class="enGras">€</span></p>
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </article>
 
                 <!-- Annonce 3 -->
@@ -150,19 +179,19 @@
                     <a href="page_hebergement.html">
                         <img class="imageAnnonce" src="image\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg"
                             alt="Image d'annonce" />
-                    </a>
-                    <div class="sousTexteAnnonceHebergement">
-                        <h3 class="h3Annonce">Hôtel Les mouettes</h3>
-                        <p>Nuit à partir de 76<span class="enGras">€</span></p>
-                        <div>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star grey"></i>
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Hôtel Les mouettes</h3>
+                            <p>Nuit à partir de 76<span class="enGras">€</span></p>
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </a>
                 </article>
 
                 <!-- Annonce 4 -->
@@ -170,19 +199,19 @@
                     <a href="page_hebergement.html">
                         <img class="imageAnnonce" src="image\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                             alt="Image d'annonce" />
-                    </a>
-                    <div class="sousTexteAnnonceHebergement">
-                        <h3 class="h3Annonce">Hôtel de la mer</h3>
-                        <p>Nuit à partir de 46<span class="enGras">€</span></p>
-                        <div>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star grey"></i>
-                            <i class="fas fa-star grey"></i>
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Hôtel de la mer</h3>
+                            <p>Nuit à partir de 46<span class="enGras">€</span></p>
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
+                                <i class="fas fa-star grey"></i>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </a>
                 </article>
 
                 <!-- Annonce 5 -->
@@ -190,19 +219,19 @@
                     <a href="page_hebergement.html">
                         <img class="imageAnnonce" src="image\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                             alt="Image d'annonce" />
-                    </a>
-                    <div class="sousTexteAnnonceHebergement">
-                        <h3 class="h3Annonce">Auberge Le Panier</h3>
-                        <p>Nuit à partir de <span class="enGras">23€</span></p>
-                        <div>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star grey"></i>
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Auberge Le Panier</h3>
+                            <p>Nuit à partir de <span class="enGras">23€</span></p>
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </a>
                 </article>
 
                 <!-- Annonce 6 -->
@@ -211,27 +240,158 @@
                         <img class="imageAnnonce"
                             src="image\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                             alt="Image d'annonce" />
-                    </a>
-                    <div class="sousTexteAnnonceHebergement">
-                        <h3 class="h3Annonce">Hôtel chez Amina</h3>
-                        <p>Nuit à partir de 96<span class="enGras">€</span></p>
-                        <div>
-                            <i class="fas fa-star blue"> </i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>
 
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Hôtel chez Amina</h3>
+                            <p>Nuit à partir de 96<span class="enGras">€</span></p>
+                            <div>
+                                <i class="fas fa-star blue"> </i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </article>
             </div>
 
             <p class="afficherPlus">Afficher plus</p>
-
         </section>
 
-        <!-- Zone populaire ------------------------------------------------------>
+        <section class="zoneAnnonceHebergementPortable">
+            <h2 class="sectionTitre" id="hebergement">Hébergements à Marseille</h2>
+
+            <div class="blocAnnonceHebergement">
+                <!-- Annonce 1 -->
+                <article class="annonceHebergement">
+                    <a href="page_hebergement.html">
+                        <img class="imageAnnonce" src="image\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Image d'annonce" />
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Auberge de la Cannebière</h3>
+                            <p>Nuit à partir de <span class="enGras">25€</span></p>
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
+
+                            </div>
+
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Annonce 2 -->
+                <article class="annonceHebergement">
+                    <a href="page_hebergement.html">
+                        <img class="imageAnnonce" src="image\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                            alt="Image d'annonce" />
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Hôtel du port</h3>
+                            <p>Nuit à partir de 52<span class="enGras">€</span></p>
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Annonce 3 -->
+                <article class="annonceHebergement">
+                    <a href="page_hebergement.html">
+                        <img class="imageAnnonce" src="image\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                            alt="Image d'annonce" />
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Hôtel Les mouettes</h3>
+                            <p>Nuit à partir de 76<span class="enGras">€</span></p>
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Annonce 4 -->
+                <article class="annonceHebergement">
+                    <a href="page_hebergement.html">
+                        <img class="imageAnnonce" src="image\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                            alt="Image d'annonce" />
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Hôtel de la mer</h3>
+                            <p>Nuit à partir de 46<span class="enGras">€</span></p>
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
+                                <i class="fas fa-star grey"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Annonce 5 -->
+                <article class="annonceHebergement">
+                    <a href="page_hebergement.html">
+                        <img class="imageAnnonce" src="image\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                            alt="Image d'annonce" />
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Auberge Le Panier</h3>
+                            <p>Nuit à partir de <span class="enGras">23€</span></p>
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Annonce 6 -->
+                <article class="annonceHebergement">
+                    <a href="page_hebergement.html">
+                        <img class="imageAnnonce"
+                            src="image\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                            alt="Image d'annonce" />
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Hôtel chez Amina</h3>
+                            <p>Nuit à partir de 96<span class="enGras">€</span></p>
+                            <div>
+                                <i class="fas fa-star blue"> </i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <p class="afficherPlus">Afficher plus</p>
+        </section>
+<!-- Zone populaire ------------------------------------------------------>
         <section class="zoneAnnoncePopulaire">
             <div>
                 <div class="titrePopulaire">
@@ -248,18 +408,18 @@
                             <img class="imageAnnonceFlottante"
                                 src="image\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                                 alt="Image d'annonce" />
-                        </a>
-                        <div class="sousTexteAnnoncePopulaire">
-                            <h3 class="h3Annonce">Hôtel Le soleil du matin</h3>
-                            <p>Nuit à partir de 128<span class="enGras">€</span></p>
-                            <div>
-                                <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
+                            <div class="sousTexteAnnoncePopulaire">
+                                <h3 class="h3Annonce">Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de 128<span class="enGras">€</span></p>
+                                <div>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </article>
 
                     <!-- Annonce 2 -->
@@ -268,18 +428,18 @@
                             <img class="imageAnnonceFlottante"
                                 src="image\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg"
                                 alt="Image d'annonce" />
-                        </a>
-                        <div class="sousTexteAnnoncePopulaire">
-                            <h3 class="h3Annonce">Au coeur de l'eau<br />Chambres d'hôtes</h3>
-                            <p>Nuit à partir de 71<span class="enGras">€</span></p>
-                            <div>
-                                <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star grey"></i>
+                            <div class="sousTexteAnnoncePopulaire">
+                                <h3 class="h3Annonce">Au coeur de l'eau<br />Chambres d'hôtes</h3>
+                                <p>Nuit à partir de 71<span class="enGras">€</span></p>
+                                <div>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star grey"></i>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </article>
 
                     <!-- Annonce 3 -->
@@ -288,18 +448,19 @@
                             <img class="imageAnnonceFlottante"
                                 src="image\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                                 alt="Image d'annonce" />
-                        </a>
-                        <div class="sousTexteAnnoncePopulaire">
-                            <h3 class="h3Annonce">Hôtel Tout bleu et <br />Blanc</h3>
-                            <p>Nuit à partir de 68<span class="enGras">€</span></p>
-                            <div>
-                                <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star grey"></i>
+
+                            <div class="sousTexteAnnoncePopulaire">
+                                <h3 class="h3Annonce">Hôtel Tout bleu et <br />Blanc</h3>
+                                <p>Nuit à partir de 68<span class="enGras">€</span></p>
+                                <div>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star grey"></i>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </article>
                 </div>
             </div>
@@ -313,7 +474,7 @@
         <h2 class="sectionTitre" id="activite">Activités à Marseille</h2>
 
         <!-- image selectionnable dans Activités-->
-        <div>
+        <div class="blocActivitéPourOrdi">
             <div class="annonceActivites">
                 <!-- bloc a -->
                 <article class="blocActivites">
@@ -377,8 +538,83 @@
                 </article>
             </div>
         </div>
+
+        <div class="blocActivitéPourPortable">
+            <div class="annonceActivites">
+                <!-- bloc a -->
+                <article class="blocActivites">
+                    <div class="dispositionActivitéPortable">
+                        <img class="imageActivitesPortable"
+                            src="image\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                            alt="Image d'annonce" />
+                        <div class="sousTexteActivites">
+                            <h3 class="h3Annonce">Vieux Port</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- bloc b -->
+                <article class="blocActivites">
+                    <div class="dispositionActivitéPortable">
+                        <img class="imageActivitesPortable"
+                            src="image\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image d'annonce" />
+                        <div class="sousTexteActivites">
+                            <h3 class="h3Annonce">Fort de Pomègues</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- bloc c -->
+                <article class="blocActivites">
+                    <div class="dispositionActivitéPortable">
+                        <img class="imageActivitesPortable"
+                            src="image\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image d'annonce" />
+                        <div class="sousTexteActivites">
+                            <h3 class="h3Annonce">Îles du Frioul</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- bloc d -->
+                <article class="blocActivites">
+                    <div class="dispositionActivitéPortable">
+                        <img class="imageActivitesPortable"
+                            src="image\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            alt="Image d'annonce" />
+                        <div class="sousTexteActivites">
+                            <h3 class="h3Annonce">Parc National des Calanques</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- bloc e -->
+                <article class="blocActivites">
+                    <div class="dispositionActivitéPortable">
+                        <img class="imageActivitesPortable"
+                            src="image\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                            alt="Image d'annonce" />
+                        <div class="sousTexteActivites">
+                            <h3 class="h3Annonce">Notre-Dame-de-la-Garde</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- bloc f -->
+                <article class="blocActivites">
+                    <div class="dispositionActivitéPortable">
+                        <img class="imageActivitesPortable"
+                            src="image\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image d'annonce" />
+                        <div class="sousTexteActivites">
+                            <h3 class="h3Annonce">Parc Longchamp</h3>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
     </div>
 
+
+    </div>
     <!-- Footer ----------------------------------------------------------->
     <footer>
         <section class="zoneFooter">
