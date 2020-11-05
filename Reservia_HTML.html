@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="Reservia_CSS.css" />
     <link rel="stylesheet" href="css\all.min.css">
-    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="Reservia_CSS_Portable.css" />
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="Reservia_CSS_Portable.css" />
 
     <title>Site Reservia</title>
 </head>
@@ -16,12 +16,13 @@
     <header>
 
         <!-- Menu Navigation -->
-        <nav class="menuNavigation">
-            <img class="logoSite" src="image\logo\Reservia.png" alt="Logo du site Reservia"
-                title="Logo du site Réservia" />
-
+        <nav class="menuNavigationPourOrdi">
+            <div class="logoReservia">
+                <img class="logoSite" src="image\logo\Reservia.png" alt="Logo du site Reservia"
+                    title="Logo du site Réservia" />
+            </div>
             <!-- Menu avec onglets alignés-->
-            <div class="menuNavigationOnglet">
+            <div class="menuNavigationOngletOrdi">
                 <div class="menuHebergement">
                     <a href="#hebergement">Hébergement</a>
                 </div>
@@ -34,9 +35,30 @@
             </div>
         </nav>
 
+        <!-- Menu Navigation Portable -->
+        <nav class="menuNavigationPortable">
+            <div class="imageSiteEtOngletInscrire">
+                <img class="logoSite" src="image\logo\Reservia.png" alt="Logo du site Reservia"
+                    title="Logo du site Réservia" />
+                <div class="menuSInscrire">
+                    <a href="#SInscrire">S'inscrire</a>
+                </div>
+            </div>
+            <!-- Menu avec onglets alignés-->
+            <div class="menuNavigationOngletPortable">
+                <div class="menuHebergement">
+                    <a href="#hebergement">Hébergement</a>
+                </div>
+                <div class="menuActivite">
+                    <a href="#activite">Activité</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Header sans le menu nav -->
+        <!-- Texte description site -->
         <div>
-            <!-- Header sans le menu nav -->
-            <!-- Texte description site -->
             <div>
                 <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong> <br />
                     en plein centre ville ou en pleine nature</h1>
@@ -49,9 +71,7 @@
                 </div>
                 <div class="boxRecherche">
                     <form method="post" action="traitement.php">
-                        <p>
-                            <input type="search" name="recherche" placeholder="Marseille,France" />
-                        </p>
+                        <input type="search" name="recherche" placeholder="Marseille,France" />
                     </form>
                 </div>
                 <div class="boutonRecherche">
@@ -60,46 +80,69 @@
                 </div>
             </section>
 
-            <!-- Filtre recherche -->
-            <section class="barreFiltre">
+        <!-- Filtre recherche -->
+        <section class="barreFiltre">
+
+            <!-- bloc pour les téléphones -->
+                <div class="filtrePortable">
+                    <div class="nomBarreFiltre">
+                        <p class="motFiltre">Filtres</p>
+                    </div>
+                        <div class="filtreSurMemeLigne">
+                            <div class="boutonFiltre">
+                                <div class="iconeFiltre">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <p class="categorieFiltre">Économique</p>
+                            </div>
+                            <div class="boutonFiltre">
+                                <div class="iconeFiltre">
+                                    <i class="fas fa-child"></i>
+                                </div>
+                                <p class="categorieFiltre">Familial</p>
+                            </div>
+                        </div>
+                        <div class="filtreSeul">
+                            <div class="boutonFiltre">
+                                <div class="iconeFiltre">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <p class="categorieFiltre">Romantique</p>
+                            </div>
+                        </div>
+                        <div class="filtreSeul">
+                            <div class="boutonFiltre">
+                                <div class="boutonAnimauxAutorises">
+                                    <div class="iconeFiltre">
+                                        <i class="fas fa-dog"></i>
+                                    </div>
+                                    <p class="categorieFiltre">Animaux Autorisés</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!-- fin bloc pour téléphone -->
+
+            <!-- bloc pour l'ordinateur -->
+            <div class="filtreOrdinateur">
                 <div class="nomBarreFiltre">
                     <p class="motFiltre">Filtres</p>
                 </div>
-                <!-- bloc pour les téléphones -->
-                <div class="filtreEconomiqueFamilialMiseEnPage">
-                    <div class="boutonFiltre">
-                        <div class="iconeFiltre">
-                            <i class="fas fa-money-bill-wave"></i>
-                        </div>
-                        <p class="categorieFiltre">Économique</p>
-                    </div>
-                    <div class="boutonFiltre">
-                        <div class="iconeFiltre">
-                            <i class="fas fa-child"></i>
-                        </div>
-                        <p class="categorieFiltre">Familial</p>
-                    </div>
-                </div>
-                <!-- fin bloc pour téléphone -->
 
-                <!-- bloc pour l'ordinateur -->
-                <div class="filtreTailleOrdinateur">
-                    <div class="boutonFiltre">
-                        <div class="iconeFiltre">
-                            <i class="fas fa-money-bill-wave"></i>
-                        </div>
-                        <p class="categorieFiltre">Économique</p>
+                <div class="boutonFiltre">
+                    <div class="iconeFiltre">
+                        <i class="fas fa-money-bill-wave"></i>
                     </div>
+                    <p class="categorieFiltre">Économique</p>
                 </div>
-                <div class="filtreTailleOrdinateur">
-                    <div class="boutonFiltre">
-                        <div class="iconeFiltre">
-                            <i class="fas fa-child"></i>
-                        </div>
-                        <p class="categorieFiltre">Familial</p>
+
+                <div class="boutonFiltre">
+                    <div class="iconeFiltre">
+                        <i class="fas fa-child"></i>
                     </div>
+                    <p class="categorieFiltre">Familial</p>
                 </div>
-                <!-- fin bloc pour ordinateur -->
 
                 <div class="boutonFiltre">
                     <div class="iconeFiltre">
@@ -107,27 +150,29 @@
                     </div>
                     <p class="categorieFiltre">Romantique</p>
                 </div>
-                <div class="boutonFiltre">
-                    <div class="boutonAnimauxAutorises">
-                        <div class="iconeFiltre">
-                            <i class="fas fa-dog"></i>
-                        </div>
-                        <p class="categorieFiltre">Animaux Autorisés</p>
-                    </div>
-                </div>
-            </section>
 
-            <!-- Texte supplémentaire -->
-            <div class="information">
-                <i class="fas fa-info-circle"></i>
-                <p>Plus de 500 logements sont disponible dans cette ville</p>
+                <div class="boutonFiltre">
+                    <div class="iconeFiltre">
+                        <i class="fas fa-dog"></i>
+                    </div>
+                    <p class="categorieFiltre">Animaux Autorisés</p>
+                </div>
             </div>
+            <!-- fin bloc pour ordinateur -->
+
+        </section>
+
+        <!-- Texte supplémentaire -->
+        <div class="information">
+            <i class="fas fa-info-circle"></i>
+            <p>Plus de 500 logements sont disponible dans cette ville</p>
         </div>
+
     </header>
 
 
     <div class="placementBlocAnnonce">
-<!-- Zone Hébergement --------------------------------------------------->
+        <!-- Zone Hébergement --------------------------------------------------->
         <section class="zoneAnnonceHebergementOrdinateur">
             <h2 class="sectionTitre" id="hebergement">Hébergements à Marseille</h2>
 
@@ -391,7 +436,7 @@
 
             <p class="afficherPlus">Afficher plus</p>
         </section>
-<!-- Zone populaire ------------------------------------------------------>
+        <!-- Zone populaire ------------------------------------------------------>
         <section class="zoneAnnoncePopulaire">
             <div>
                 <div class="titrePopulaire">
@@ -542,7 +587,7 @@
         <div class="blocActivitéPourPortable">
             <div class="annonceActivites">
                 <!-- bloc a -->
-                <article class="blocActivites">
+                <article class="sousBlocActivitesPortable">
                     <div class="dispositionActivitéPortable">
                         <img class="imageActivitesPortable"
                             src="image\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
@@ -554,7 +599,7 @@
                 </article>
 
                 <!-- bloc b -->
-                <article class="blocActivites">
+                <article class="sousBlocActivitesPortable">
                     <div class="dispositionActivitéPortable">
                         <img class="imageActivitesPortable"
                             src="image\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image d'annonce" />
@@ -565,7 +610,7 @@
                 </article>
 
                 <!-- bloc c -->
-                <article class="blocActivites">
+                <article class="sousBlocActivitesPortable">
                     <div class="dispositionActivitéPortable">
                         <img class="imageActivitesPortable"
                             src="image\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image d'annonce" />
@@ -576,7 +621,7 @@
                 </article>
 
                 <!-- bloc d -->
-                <article class="blocActivites">
+                <article class="sousBlocActivitesPortable">
                     <div class="dispositionActivitéPortable">
                         <img class="imageActivitesPortable"
                             src="image\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
@@ -588,7 +633,7 @@
                 </article>
 
                 <!-- bloc e -->
-                <article class="blocActivites">
+                <article class="sousBlocActivitesPortable">
                     <div class="dispositionActivitéPortable">
                         <img class="imageActivitesPortable"
                             src="image\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg"
@@ -600,7 +645,7 @@
                 </article>
 
                 <!-- bloc f -->
-                <article class="blocActivites">
+                <article class="sousBlocActivitesPortable">
                     <div class="dispositionActivitéPortable">
                         <img class="imageActivitesPortable"
                             src="image\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image d'annonce" />
