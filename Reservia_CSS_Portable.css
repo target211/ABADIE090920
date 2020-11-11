@@ -32,7 +32,7 @@ h1{
     margin-left: 0px;
     padding-top: 20px;
 
-    width: 700px;
+    width: 100%;
 
 }
 
@@ -94,7 +94,7 @@ h1{
 .menuHebergement a{
     color: grey;
     width: auto;
-    padding-left: 40px;
+    margin-left: 25%;
 }
 .menuHebergement:hover{
     border-top: 3px white solid;
@@ -112,7 +112,7 @@ h1{
 }
 .menuActivite a{
     width: auto;
-    padding-left: 90px;
+    margin-left: 35%;
     color: grey;
 }
 .menuActivite:hover{
@@ -227,7 +227,7 @@ h1{
 /* Regroupe les annonces */
 .blocAnnonceHebergement{
     flex-direction: column;
-    width: 100%;
+    width: 95%;
 }
 
 /* chaque annonce indépendante */
@@ -268,6 +268,8 @@ h1{
     margin-right: auto;
     margin-top: 40px;
     margin-bottom: 0px;
+
+    padding-bottom: 20px;
 }
 
 /* chaque annonce indépendante */
@@ -286,7 +288,7 @@ h1{
 /* bloc global activité */
 .zoneActivites{
     height: auto;
-    width: 650px;
+    width: 100%;
     margin: 0px;
     margin-top: 20px;
     margin-left: 5px;
@@ -307,12 +309,12 @@ h1{
     flex-direction: column;
 
     margin-bottom: 10px;
-    height: 190px;
+    height: 300px;
 
 }
 
 .blocActivitesVersionPortable{
-    height: 450px;
+    height: 550px;
     width: 95%;
     margin-left: 0px;
     margin-bottom: 0px;
@@ -320,7 +322,7 @@ h1{
 
 /* Dimension Image Activité */
 .imageActivites{
-    height: 250px;
+    height: 300px;
     width: 100%;
 }
 
@@ -328,25 +330,14 @@ h1{
 .annonceActivites{
     flex-direction: column;
 }
-.sousBlocActivites{
-    margin: auto;
-    margin-top: 0px;
-    margin-bottom: 15px;
-
-    border-radius: 30px;
-    height: 300px;
-    width: 95%;
-
-    overflow-x : hidden;
-    box-shadow: 3px 3px rgba(153, 147, 147, 0.08);
-}
 
 .dispositionActivitesSimpleBloc{
-    height: 200px;
+    height: 300px;
 }
 .imageActivitesPortable{
     overflow-x : hidden;
     margin-bottom: 0px;
+    height: 300px;
 }
 
 
