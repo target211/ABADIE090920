@@ -1,0 +1,341 @@
+.logoSite
+{
+    width: 40%;
+}
+
+
+h1{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+
+/*cadre general des sections ------------------------------------------------*/
+
+/* Place les blocs hebergements et populaire cote a cote*/
+.placementBlocAnnonce{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* fin cadre general des sections ----------------------------------------------*/
+
+
+
+/*-------------------- Header ------------------------------------------------------------*/
+
+.menuNavigationPortable{
+    display: flex;
+    padding-top: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+}
+.menuNavigationPourOrdi{
+    display: none;
+}
+
+.menuSInscrire a{
+    display: flex;
+    justify-content: flex-end;
+
+    width: 300px;
+
+    padding-top: 50px;
+    padding-right: 30px;
+
+    color:#0065FC;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.imageSiteEtOngletInscrire{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.menuNavigationOngletPortable{
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    font-weight: normal;
+
+    color:#0065FC;
+    font-weight: bold;
+}
+
+.menuNavigationOnglet a{
+    font-size: 2em;
+}
+
+.menuHebergement{
+    border-bottom: 3px grey solid;
+
+    padding-bottom: 20px;
+}
+.menuHebergement a{
+    color: grey;
+}
+.menuHebergement:hover{
+    border-top: 3px white solid;
+    border-bottom: 3px #0065FC solid;
+}
+.menuHebergement a:hover{
+    color: #0065FC;
+}
+
+.menuActivite{
+    border-bottom: 3px grey solid;
+
+    padding-bottom: 20px;
+}
+.menuActivite a{
+    color: grey;
+}
+.menuActivite:hover{
+    border-top: 3px white solid;
+    border-bottom: 3px #0065FC solid;
+}
+.menuActivite a:hover{
+    color: #0065FC;
+}
+
+.menuSInscrire:hover{
+    border-top: 3px white solid;
+}
+
+/* zone recherche --------------------------*/
+.cadreRecherche{
+    width: 90%;
+    margin-left: 20px;
+}
+
+/* premiere icone sur barre recherche */
+.iconeRecherche{
+    width: 10%;
+    font-size: 1em;
+}
+
+/* bloc recherche */
+.boxRecherche input{
+    width: 100%;
+}
+
+.boxRecherche{
+    width: 80%;
+}
+
+.boutonRecherche{
+    width: 10%;
+}
+
+/* active l'icone recherche */
+.fas.fa-search{
+    margin-top: 15px;
+    margin-left: 15px;
+
+    font-size: large;
+    font-weight: bold;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* desactive mot Recherche */
+.titreBoutonRecherche{
+    display: none;
+}
+
+
+
+
+/* zone filtre ------------------------------*/
+
+.barreFiltre{
+    flex-direction: column;
+
+    margin-left: 20px;
+
+    height: 200px;
+    width: 350px;
+}
+
+.nomBarreFiltre{
+    width: 300px;
+}
+
+.filtrePortable{
+    display: flex;
+    flex-direction: column;
+}
+.filtreSurMemeLigne{
+    display: flex;
+}
+.filtreSeul{
+    display: flex;
+}
+
+/* information -----------------------*/
+.information{
+    margin-left: 20px;
+}
+
+
+/* bloque html fait pour l'ordi */
+.filtreOrdinateur{
+    display: none;
+}
+
+
+/* --------------- Zone Hebergement ------------------------------------------------------------------------------------- */
+
+/* La plus grande section Hebergement */
+
+.zoneAnnonceHebergementPortable{
+    background-color: #F2F2F2; /* Le fond de la page sera gris */
+    border-radius: 30px;
+    width: 95%;
+    height: 34%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Regroupe les annonces */
+.blocAnnonceHebergement{
+    flex-direction: column;
+    width: 100%;
+}
+
+/* chaque annonce indépendante */
+.annonceHebergement{
+
+    /* dimension */
+    width: 95%;
+    height: 250px;
+    display: inline-block;   
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Dimension Image */
+.imageAnnonce{
+    height: 60%;
+}
+
+.sousTexteAnnonceHebergement{
+    margin-bottom: 0px;
+}
+
+/* fait disparaitre version Ordinateur */
+.zoneAnnonceHebergementOrdinateur{
+    display: none;
+}
+
+/* fait apparaitre version portable */
+.zoneAnnonceHebergementPortable{
+    display: inline;
+}
+
+/* fin CSS Hebergement ------------------------------------------------*/
+
+
+
+
+/* début Zone Populaire ---------------------------------------------------------------------*/
+
+/* La plus grande section Hebergement */
+.zoneAnnoncePopulaire{
+    width: 95%;
+    height: 34%;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* chaque annonce indépendante */
+.annoncePopulaire{
+    width: 90%;
+}
+
+/* fin Zone Populaire -------------------------------------------------*/
+
+
+
+
+
+/* Zone Activité -------------------------------------------------------*/
+
+/* texte sous les images */
+.sousTexteActivites{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+/* placer activité l'une sur l'autre */
+.blocActivitéPourPortable{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Dimension Image Activité */
+.imageActivitesPortable{
+    height: 250px;
+    width: 100%;
+}
+
+/* Placer Activité en colonne */
+.annonceActivites{
+    flex-direction: column;
+}
+.sousBlocActivitesPortable{
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+
+    border-radius: 30px;
+    height: 300px;
+    width: 95%;
+
+    overflow-x : hidden;
+    box-shadow: 3px 3px rgba(153, 147, 147, 0.08);
+}
+/* fait apparaitre bloc version portable de activites */
+.blocActivitéPortable{
+    display: inline;
+
+}
+
+/* bloque version ordi de Activites */
+.blocActivitéPourOrdi{
+    display: none;
+}
+
+
+/* fin Zone Activité ----------------------------------------------------*/
+
+
+/* footer ---------------------------------------------------------------*/
+.zoneFooter{
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+}
+
+.blocFooter{
+    margin-bottom: 40px;
+}
+
+/* fin du footer --------------------------------------------------------*/
+
+
+
+

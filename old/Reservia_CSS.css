@@ -1,0 +1,564 @@
+.logoSite
+{
+    width: 150px;
+}
+
+/* initialisation de la police d'ecriture*/
+@font-face {
+    font-family: 'Reservia';
+    src: url('Raleway-VariableFont_wght.ttf');
+}
+
+/* Police d'ecriture pour tout les textes*/
+*{
+    font-family: Reservia, Impact;
+}
+
+/* titre descriptif de la page */
+h1{
+    font-size: 1.5em;
+    margin-left: 40px;
+}
+
+/* Toute la page --------------------------------------------------------------*/
+body
+{
+    background-color: white; /* Le fond de la page sera blanc */
+    color: black; /* Le texte de la page sera noir */
+}
+
+/* texte a mettre en gras*/
+.enGras{
+    font-weight: bold;
+}
+
+/*couleur icone */
+.fas.fa-star.blue{
+color: #0065FC;
+}
+
+.fas.fa-star.grey{
+color: rgb(192, 188, 188);
+}
+
+/* reduction espace prit par les paragraphe */
+p{
+    margin: 5px;
+}
+/*cadre general des sections ------------------------------------------------*/
+
+/*titre des sections */
+.sectionTitre{
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: -10px;
+}
+
+
+/* Place les blocs hebergements et populaire cote a cote*/
+.placementBlocAnnonce{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+/* fin cadre general des sections ----------------------------------------------*/
+
+
+
+/*-------------------- Header ------------------------------------------------------------*/
+
+.menuNavigationPourOrdi{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+    margin-left: 40px;
+
+    width: 92%;
+}
+
+.menuNavigationOngletOrdi{
+    display: flex;
+
+    width: 300px;
+
+    padding-top: 20px;
+    padding-right: 30px;
+
+    margin-right: 50px;
+}
+
+.logoReservia{
+    display: flex;
+}
+
+.menuNavigationOnglet a{
+    color:#0065FC;
+    font-weight: bold;
+}
+
+/* enleve version portable */
+.menuNavigationPortable{
+    display: none;
+}
+
+/* different onglet du menu */
+.menuHebergement{
+    border-top: 3px white solid;
+    padding-top: 10px;
+}
+.menuHebergement:hover{
+    border-top: 3px #0065FC solid;
+}
+.menuHebergement a{
+    color: grey;
+    font-weight: bold;
+    font-size: 1.5em; 
+}
+.menuHebergement a:hover{
+    color: #0065FC;
+}
+
+.menuActivite{
+    margin-left: 30px;
+    margin-right: 30px;
+    border-top: 3px white solid;
+    padding-top: 10px;
+}
+.menuActivite:hover{
+    border-top: 3px #0065FC solid;
+}
+.menuActivite a{
+    color: grey;
+    font-weight: bold;
+    font-size: 1.5em; 
+}
+.menuActivite a:hover{
+    color: #0065FC;
+}
+
+.menuSInscrire{
+    border-top: 3px white solid;
+    padding-top: 10px;
+}
+.menuSInscrire:hover{
+    border-top: 3px #0065FC solid;
+}
+.menuSInscrire a{
+    color: #0065FC;
+    font-weight: bold;
+    font-size: 1.5em; 
+}
+
+/* visuel des ancres */
+a{
+    color: black;
+    text-decoration-line: none;
+}
+
+/* zone recherche --------------------------*/
+.cadreRecherche{
+    display: flex;
+    flex-direction: row;
+
+    width: 600px;
+    height: 50px;
+
+    margin: 40px;
+}
+
+/* premiere icone sur barre recherche */
+.iconeRecherche{
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+/*couleur fond premiere icone sur barre recherche */
+.fas.fa-map-marker-alt{
+    padding: 19px;
+}
+
+
+/* bloc recherche -------------------------------------*/
+.boxRecherche input{
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+.boxRecherche{
+    height: 50px;
+    padding-left: 0px;
+    padding-top: 0px;
+    border-color: #F2F2F2;
+}
+
+.boutonRecherche{
+    background-color: #0065FC;
+    height: 50px;
+    width: 150px;
+    border-radius: 0 10px 10px 0;
+}
+
+.titreBoutonRecherche{
+    margin-top: 15px;
+    margin-left: 15px;
+
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+/* desactive l'icone recherche */
+.fas.fa-search{
+    display: none;
+}
+
+/* zone filtre ------------------------------*/
+
+.filtreOrdinateur{
+    display: flex;
+    margin-left: 40px;
+}
+
+.nomBarreFiltre{
+    margin-right: 90px;
+    margin-top: 15px;
+
+    font-size: large;
+    font-weight: bold;
+}
+.boutonFiltre{
+    display: flex;
+    margin-top: 10px;
+    margin-right: 30px;
+
+    border: 3px #F2F2F2 solid;
+    border-radius: 30px;
+
+    font-size: large;
+    font-weight: bold;
+}
+
+.boutonFiltre:hover{
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,5);
+    cursor : pointer;
+    transition: box-shadow 0.5s;
+}
+/* zone icone filtre */
+.iconeFiltre{
+    width: 30px; 
+    border: 3px #F2F2F2 solid;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #F2F2F2;
+}
+
+/* icone filtre */
+.fas.fa-money-bill-wave{
+    margin-top: 5px;
+    margin-left: 2px;
+    color:  #0065FC;
+}
+.fas.fa-child{
+    margin-top: 5px;
+    margin-left: 7px;
+    color:  #0065FC;
+}
+.fas.fa-heart{
+    margin-top: 5px;
+    margin-left: 5px;
+    color:  #0065FC;
+}
+.fas.fa-dog{
+    margin-top: 3px;
+    margin-left: 3px;
+    color:  #0065FC;
+}
+.boutonAnimauxAutorises{
+    width: 210px;
+    display: flex;
+}
+.boutonFiltre p{
+    margin-top: 7px;
+}
+
+/* bloque html fait pour le portable */
+.filtrePortable{
+    display: none;
+}
+
+/* information -----------------------*/
+.information{
+    display: flex;
+    margin: 20px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+
+    height: 15px;
+}
+.fas.fa-info-circle{
+    color: #F2F2F2;
+    background-color: blue;
+    border-radius: 50px;
+}
+
+
+/* --------------- Zone Hebergement ------------------------------------------------------------------------------------- */
+
+/* La plus grande section Hebergement */
+
+.zoneAnnonceHebergementOrdinateur{
+    background-color: #F2F2F2; /* Le fond de la page sera gris */
+    border-radius: 30px;
+    width: 60%;
+    height: 720px;
+}
+
+/* Regroupe les annonces */
+.blocAnnonceHebergement{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* chaque annonce indépendante */
+.annonceHebergement{
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    overflow-x : hidden;
+
+    /* cadre */
+    border : 5px white solid;
+    border-radius: 30px;
+
+    /* dimension */
+    margin: 20px;
+    height: 10%;
+    width: 28%;
+    display: inline-block;   
+    padding-bottom: 0px; 
+    overflow : hidden;
+
+    background-color: white;
+}
+
+/* Dimension Image */
+.imageAnnonce{
+    height: 150px;
+    width: 100%;
+}
+
+.sousTexteAnnonceHebergement{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+/* titre de l'annonce a mettre en gras*/
+.h3Annonce{
+    font-weight: bold;
+    display: inline;
+}
+
+/* texte pour afficher plus d'annonce */
+.afficherPlus{
+    font-weight: bold;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    
+    display: inline;
+    display: inline-block;  
+}
+
+
+/* fait disparaitre version portable */
+.zoneAnnonceHebergementPortable{
+    display: none;
+}
+/* fin CSS Hebergement ------------------------------------------------*/
+
+
+
+
+/* début Zone Populaire ---------------------------------------------------------------------*/
+
+/* La plus grande section Populaire */
+.zoneAnnoncePopulaire{
+    background-color: #F2F2F2; /* Le fond de la page sera gris */
+    border-radius: 30px;
+    width: 31%;
+    height: 720px;
+}
+
+/* Regroupe les annonces */
+.blocAnnoncePopulaire{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* chaque annonce indépendante */
+.annoncePopulaire{
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    overflow-x : hidden;
+
+    /* cadre */
+    border : 5px white solid;
+    border-radius: 30px;
+
+    /* dimension */
+    margin: 20px;
+    height: 23%;
+    width: 80%;
+    display: inline-block;   
+    padding-bottom: 0px; 
+    overflow : hidden;
+
+    background-color: white;
+}
+/* Dimension Image */
+.imageAnnonceFlottante{
+    height: 145px;
+    width: 40%;
+    float: left;
+}
+
+.sousTexteAnnoncePopulaire{
+    margin: 10px 10px 10px 44%;
+
+}
+
+.titrePopulaire{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fas.fa-chart-line{
+    margin-top: 50px;
+    margin-right: 80px;
+    font-size: 1.5em;
+}
+
+/* fin Zone Populaire -------------------------------------------------*/
+
+
+
+
+
+/* Zone Activité -------------------------------------------------------*/
+
+/* bloc global activité */
+.zoneActivites{
+    height: 26%;
+    width: 92%;
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+/* les 4 blocs qui divisent le bloc global d'Activites */
+.blocActivites{
+    margin: 10px;
+    margin-bottom: 15px;
+
+    height: 500px;
+    width: 92%;
+}
+
+/* texte sous les images */
+.sousTexteActivites{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+/* placer activité l'une sur l'autre */
+.dispositionActivitéSimpleBloc{
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 30px;
+    overflow-x : hidden;
+    box-shadow: 3px 3px rgba(153, 147, 147, 0.08);
+}
+.dispositionActivitéDoubleBloc{
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 30px;
+    overflow-x : hidden;
+    box-shadow: 3px 3px rgba(153, 147, 147, 0.08);
+
+    margin: 10px;
+}
+
+/* Dimension Image Activité */
+.imageActivitesSimpleBloc{
+    height: 460px;
+    width: 100%;
+}
+.imageActivitesDoubleBloc{
+    height: 200px;
+    width: 100%;
+}
+
+/* Placer Activité cote a cote */
+.annonceActivites{
+    display: flex;
+}
+
+/* dimension image de taille différente */
+.imageActivitesDuFortGrande{
+    height: 225px;
+    width: 100%;
+}
+.imageActivitesDeFrioulPetite{
+    height: 175px;
+    width: 100%;
+}
+
+/* bloque version portable de Activites */
+.blocActivitéPourPortable{
+    display: none;
+}
+/* fin Zone Activité ----------------------------------------------------*/
+
+
+/* footer ---------------------------------------------------------------*/
+
+.zoneFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    margin: 30px;
+    margin-left: 40px;
+    padding: 30px;
+    height: 160px;
+
+    background-color: #F2F2F2;
+}
+
+.blocFooter{
+    margin-right: 200px;
+}
+
+.zoneFooter p{
+    margin: 15px;
+}
+
+/* fin du footer --------------------------------------------------------*/
+
+
+
+

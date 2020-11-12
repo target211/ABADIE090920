@@ -1,0 +1,364 @@
+
+/*cadre general des sections ------------------------------------------------*/
+
+/* Place les blocs hebergements et populaire cote a cote*/
+.placementBlocAnnonce{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* fin cadre general des sections ----------------------------------------------*/
+
+
+
+/*-------------------- Header ------------------------------------------------------------*/
+
+/*----------------------- Menu Navigation -------------------------*/
+.logoReservia{
+    width: 200px;
+    height: 100px;
+}
+
+h1{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.menuNavigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-left: 0px;
+    padding-top: 20px;
+
+    width: 100%;
+
+}
+
+.menuSInscrireOrdi{
+    display: none;
+}
+
+.menuSInscrirePortable{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-top: 3px white solid;
+    padding-top: 9px;
+
+    font-size: 1.5em;
+}
+.menuSInscrirePortable a{
+    display: flex;
+    justify-content: flex-end;
+
+    width: 200px;
+
+    color:#0065FC;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.menuSInscrirePortable:hover{
+    border-top: 3px white solid;
+}
+
+
+
+.imageSiteEtOngletInscrire{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.menuNavigationOnglet{
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    font-weight: normal;
+
+    color:#0065FC;
+    font-weight: bold;
+}
+
+.menuNavigationOnglet a{
+    font-size: 2em;
+}
+
+.menuHebergement{
+    border-bottom: 3px grey solid;
+
+    width: 50%;
+    padding-bottom: 20px;
+}
+.menuHebergement a{
+    color: grey;
+    width: auto;
+    margin-left: 25%;
+}
+.menuHebergement:hover{
+    border-top: 3px white solid;
+    border-bottom: 3px #0065FC solid;
+}
+.menuHebergement a:hover{
+    color: #0065FC;
+}
+
+.menuActivite{
+    border-bottom: 3px grey solid;
+
+    width: 50%;
+    padding-bottom: 20px;
+}
+.menuActivite a{
+    width: auto;
+    margin-left: 35%;
+    color: grey;
+}
+.menuActivite:hover{
+    border-top: 3px white solid;
+    border-bottom: 3px #0065FC solid;
+}
+.menuActivite a:hover{
+    color: #0065FC;
+}
+
+
+/*--------------- Fin Menu Navigation ----------------------*/
+
+
+/*------------------- zone recherche --------------------------*/
+.cadreRecherche{
+    width: 90%;
+    margin-left: 20px;
+}
+
+/* premiere icone sur barre recherche */
+.iconeRecherche{
+    width: 10%;
+    font-size: 1em;
+}
+
+/* bloc recherche */
+.boxRecherche input{
+    width: 100%;
+}
+
+.boxRecherche{
+    width: 80%;
+}
+
+.boutonRecherche{
+    width: 10%;
+}
+
+/* active l'icone recherche */
+.fas.fa-search{
+    margin-top: 15px;
+    margin-left: 15px;
+
+    font-size: large;
+    font-weight: bold;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* desactive mot Recherche */
+.titreBoutonRecherche{
+    display: none;
+}
+
+
+
+
+/* zone filtre ------------------------------*/
+
+.barreFiltre{
+    flex-direction: column;
+
+    margin-left: 20px;
+
+    height: 200px;
+    width: 350px;
+}
+
+.nomBarreFiltre{
+    width: 300px;
+}
+
+.zoneFiltre{
+    display: flex;
+    flex-direction: column;
+}
+
+.filtreRomantique{
+    width: 150px;
+}
+.filtreAnimaux{
+    width: 210px;
+}
+
+
+/* information -----------------------*/
+.information{
+    margin-left: 20px;
+}
+
+
+
+/* --------------- Zone Hebergement ------------------------------------------------------------------------------------- */
+
+/* La plus grande section Hebergement */
+
+.zoneAnnonceHebergement{
+    background-color: #F2F2F2; /* Le fond de la page sera gris */
+    border-radius: 30px;
+    width: 95%;
+    height: 34%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Regroupe les annonces */
+.blocAnnonceHebergement{
+    flex-direction: column;
+    width: 95%;
+}
+
+/* chaque annonce indépendante */
+.annonceHebergement{
+
+    /* dimension */
+    width: 95%;
+    height: 250px;
+    display: inline-block;   
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Dimension Image */
+.imageAnnonce{
+    height: 60%;
+}
+
+.sousTexteAnnonceHebergement{
+    margin-bottom: 0px;
+}
+
+/* fin CSS Hebergement ------------------------------------------------*/
+
+
+
+
+/* début Zone Populaire ---------------------------------------------------------------------*/
+
+/* La plus grande section Hebergement */
+.zoneAnnoncePopulaire{
+    width: 95%;
+    height: 34%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 0px;
+
+    padding-bottom: 20px;
+}
+
+/* chaque annonce indépendante */
+.annoncePopulaire{
+    width: 90%;
+}
+
+/* fin Zone Populaire -------------------------------------------------*/
+
+
+
+
+
+/* Zone Activité -------------------------------------------------------*/
+
+/* bloc global activité */
+.zoneActivites{
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.zoneActivites h2{
+    margin-left: 10px;
+}
+/* texte sous les images */
+.sousTexteActivites{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+/* placer activité l'une sur l'autre */
+.blocActivites{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+    height: 300px;
+
+}
+
+.blocActivitesVersionPortable{
+    height: 550px;
+    width: 95%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+/* Dimension Image Activité */
+.imageActivites{
+    height: 300px;
+    width: 100%;
+}
+
+/* Placer Activité en colonne */
+.annonceActivites{
+    flex-direction: column;
+}
+
+.dispositionActivitesSimpleBloc{
+    height: 300px;
+}
+.imageActivitesPortable{
+    overflow-x : hidden;
+    margin-bottom: 0px;
+    height: 300px;
+}
+
+
+/* fin Zone Activité ----------------------------------------------------*/
+
+
+/* footer ---------------------------------------------------------------*/
+.zoneFooter{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 20px;
+    height: auto;
+}
+
+.blocFooter{
+    margin-bottom: 40px;
+}
+
+/* fin du footer --------------------------------------------------------*/
+
+
+
+
