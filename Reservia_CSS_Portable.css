@@ -94,7 +94,7 @@ h1{
 .menuHebergement a{
     color: grey;
     width: auto;
-    margin-left: 25%;
+    margin-left: 50px;
 }
 .menuHebergement:hover{
     border-top: 3px white solid;
@@ -404,7 +404,10 @@ h1{
         display: flex;
         flex-direction: column;
 
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        
         margin-left: auto;
         margin-right: auto;
         height: 300px;
@@ -416,6 +419,9 @@ h1{
 
         margin-left: auto;
         margin-right: auto;
+    }
+    .dispositionActivitesDoubleBloc{
+        margin-top: 25px;
     }
 
     /* Placer Activité en colonne */
