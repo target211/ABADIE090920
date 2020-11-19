@@ -135,7 +135,6 @@ h1{
 
 /* premiere icone sur barre recherche */
 .iconeRecherche{
-    width: 10%;
     font-size: 1em;
 }
 
@@ -184,6 +183,19 @@ h1{
     width: 350px;
 }
 
+.boutonFiltre:hover{
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,5);
+    cursor : pointer;
+    transition: box-shadow 0.5s;
+}
+/* zone icone filtre */
+.iconeFiltre{
+    width: 30px; 
+    border: 3px #F2F2F2 solid;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #F2F2F2;
+}
+
 .nomBarreFiltre{
     width: 300px;
 }
@@ -229,12 +241,11 @@ h1{
     flex-direction: column;
     width: 95%;
 }
-
 /* chaque annonce indépendante */
 .annonceHebergement{
 
     /* dimension */
-    width: 95%;
+    width: 90%;
     height: 250px;
     display: inline-block;   
 
@@ -251,6 +262,75 @@ h1{
 .sousTexteAnnonceHebergement{
     margin-bottom: 0px;
 }
+
+@media screen and (min-width: 800px) and (max-width: 1050px)
+{
+    /* chaque annonce indépendante */
+    .annonceHebergement{
+
+        /* dimension */
+        width: 700px;
+        height: 320px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Dimension Image */
+    .imageAnnonce{
+        height: 70%;
+    }
+
+    .sousTexteAnnonceHebergement{
+        margin-bottom: 0px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px)
+{
+    /* chaque annonce indépendante */
+    .annonceHebergement{
+
+        /* dimension */
+        width: 500px;
+        height: 250px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Dimension Image */
+    .imageAnnonce{
+        height: 70%;
+    }
+
+    .sousTexteAnnonceHebergement{
+        margin-bottom: 0px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 599px)
+{
+    /* chaque annonce indépendante */
+    .annonceHebergement{
+
+        /* dimension */
+        width: 350px;
+        height: 250px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Dimension Image */
+    .imageAnnonce{
+        height: 70%;
+    }
+
+}
+
 
 /* fin CSS Hebergement ------------------------------------------------*/
 
@@ -277,6 +357,14 @@ h1{
     width: 90%;
 }
 
+.imageAnnonceFlottante{
+    width: 170px;
+    height: 170px; 
+}
+
+.sousTexteAnnoncePopulaire{
+    padding-top: 20px;
+}
 /* fin Zone Populaire -------------------------------------------------*/
 
 
@@ -285,61 +373,146 @@ h1{
 
 /* Zone Activité -------------------------------------------------------*/
 
-/* bloc global activité */
-.zoneActivites{
-    height: auto;
-    width: 100%;
-    margin: 0px;
-    margin-top: 20px;
-    margin-left: 5px;
-}
-.zoneActivites h2{
-    margin-left: 10px;
-}
-/* texte sous les images */
-.sousTexteActivites{
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-bottom: 10px;
+    /* bloc global activité */
+    .zoneActivites{
+        width: 95%;
+
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .zoneActivites h2{
+        margin-left: 10px;
+    }
+    /* texte sous les images */
+    .sousTexteActivites{
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    /* placer activité l'une sur l'autre */
+    .blocActivites{
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+    }
+
+    .blocActivitesVersionPortable{
+        height: 550px;
+        width: 95%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Placer Activité en colonne */
+    .annonceActivites{
+        flex-direction: column;
+    }
+
+    .dispositionActivitesSimpleBloc{
+        height: 300px;
+    }
+
+
+@media screen and (min-width: 800px) and (max-width: 1050px)
+{
+    /*Taille zone activité*/
+    .zoneActivites{
+        height: 2200px; 
+    }
+    .blocActivites{
+        height: 300px;
+    }
+    .blocActivitesVersionPortable{
+        height: 700px;
+    }
+
+    /*largeur zone activité*/
+    .zoneActivites{
+        width: 750px;
+    }
+
+    /* Dimension Image Activité */
+    .imageActivites{
+        height: 350px;
+        width: 750px;
+    }
+    .imageActivitesPortable{
+        overflow-x : hidden;
+        margin-bottom: 0px;
+        height: 350px;
+        width: 750px;
+    }
 }
 
-/* placer activité l'une sur l'autre */
-.blocActivites{
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 600px) and (max-width: 800px)
+{
 
-    margin-bottom: 10px;
-    height: 300px;
+    /*Taille zone activité*/
+    .zoneActivites{
+        height: 1950px; 
+    }
+    .blocActivites{
+        height: 300px;
+    }
+    .blocActivitesVersionPortable{
+        height: 590px;
+    }
 
+    /*largeur zone activité*/
+    .zoneActivites{
+        width: 550px;
+    }
+
+    /* Dimension Image Activité */
+    .imageActivites{
+        height: 400px;
+        width: 550px;
+    }
+    .imageActivitesPortable{
+        overflow-x : hidden;
+        margin-bottom: 0px;
+        height: 400px;
+        width: 550px;
+    }
 }
 
-.blocActivitesVersionPortable{
-    height: 550px;
-    width: 95%;
-    margin-left: 0px;
-    margin-bottom: 0px;
-}
+@media screen and (max-width: 599px)
+{   
+    /*Taille zone activité*/
+    .zoneActivites{
+        height: 1800px; 
+    }
+    .blocActivites{
+        height: 270px;
+    }
+    .blocActivitesVersionPortable{
+        height: 550px;
+    }
 
-/* Dimension Image Activité */
-.imageActivites{
-    height: 300px;
-    width: 100%;
-}
+    /*largeur zone activité*/
+    .zoneActivites{
+        width: 400px;
+    }
 
-/* Placer Activité en colonne */
-.annonceActivites{
-    flex-direction: column;
+    /* Dimension Image Activité */
+    .imageActivites{
+        height: 300px;
+        width: 400px;
+    }
+    .imageActivitesPortable{
+        overflow-x : hidden;
+        margin-bottom: 0px;
+        height: 300px;
+        width: 400px;
+    }
 }
-
-.dispositionActivitesSimpleBloc{
-    height: 300px;
-}
-.imageActivitesPortable{
-    overflow-x : hidden;
-    margin-bottom: 0px;
-    height: 300px;
-}
-
 
 /* fin Zone Activité ----------------------------------------------------*/
 
@@ -358,7 +531,3 @@ h1{
 }
 
 /* fin du footer --------------------------------------------------------*/
-
-
-
-
