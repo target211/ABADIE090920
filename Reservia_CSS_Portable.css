@@ -503,7 +503,8 @@ h1{
     }
     .dispositionActivitesSimpleBloc{
         margin: 10px;
-        width: 380px;
+        margin-left: 15px;
+        width: 370px;
     }
 
     /*largeur zone activité*/
