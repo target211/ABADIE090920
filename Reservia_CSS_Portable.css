@@ -154,7 +154,8 @@ h1{
 /* active l'icone recherche */
 .fas.fa-search{
     margin-top: 15px;
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-right: auto;
 
     font-size: large;
     font-weight: bold;
@@ -415,10 +416,6 @@ h1{
         flex-direction: column;
     }
 
-    .dispositionActivitesSimpleBloc{
-        height: 300px;
-    }
-
 
 @media screen and (min-width: 800px) and (max-width: 1050px)
 {
@@ -431,6 +428,11 @@ h1{
     }
     .blocActivitesVersionPortable{
         height: 700px;
+    }
+    .dispositionActivitesSimpleBloc{
+        margin: 10px;
+        margin-left: 20px;
+        width: 710px;
     }
 
     /*largeur zone activité*/
@@ -464,6 +466,10 @@ h1{
     .blocActivitesVersionPortable{
         height: 590px;
     }
+    .dispositionActivitesSimpleBloc{
+        margin: 10px;
+        width: 530px;
+    }
 
     /*largeur zone activité*/
     .zoneActivites{
@@ -494,6 +500,10 @@ h1{
     }
     .blocActivitesVersionPortable{
         height: 550px;
+    }
+    .dispositionActivitesSimpleBloc{
+        margin: 10px;
+        width: 380px;
     }
 
     /*largeur zone activité*/
@@ -531,3 +541,7 @@ h1{
 }
 
 /* fin du footer --------------------------------------------------------*/
+
+
+
+
