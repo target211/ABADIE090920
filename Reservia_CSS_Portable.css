@@ -94,7 +94,7 @@ h1{
 .menuHebergement a{
     color: grey;
     width: auto;
-    margin-left: 25%;
+    margin-left: 50px;
 }
 .menuHebergement:hover{
     border-top: 3px white solid;
@@ -154,7 +154,8 @@ h1{
 /* active l'icone recherche */
 .fas.fa-search{
     margin-top: 15px;
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-right: auto;
 
     font-size: large;
     font-weight: bold;
@@ -173,6 +174,9 @@ h1{
 
 
 /* zone filtre ------------------------------*/
+.zoneFiltre{
+    height: 210px;
+}
 
 .barreFiltre{
     flex-direction: column;
@@ -207,15 +211,19 @@ h1{
 
 .filtreRomantique{
     width: 150px;
+    margin-top: 15px;
 }
 .filtreAnimaux{
     width: 210px;
+    margin-top: 15px;
 }
 
 
 /* information -----------------------*/
 .information{
     margin-left: 20px;
+    margin-bottom: 10px;
+    padding-top: 0px;
 }
 
 
@@ -396,7 +404,10 @@ h1{
         display: flex;
         flex-direction: column;
 
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        
         margin-left: auto;
         margin-right: auto;
         height: 300px;
@@ -409,14 +420,13 @@ h1{
         margin-left: auto;
         margin-right: auto;
     }
+    .dispositionActivitesDoubleBloc{
+        margin-top: 25px;
+    }
 
     /* Placer Activité en colonne */
     .annonceActivites{
         flex-direction: column;
-    }
-
-    .dispositionActivitesSimpleBloc{
-        height: 300px;
     }
 
 
@@ -431,6 +441,11 @@ h1{
     }
     .blocActivitesVersionPortable{
         height: 700px;
+    }
+    .dispositionActivitesSimpleBloc{
+        margin: 10px;
+        margin-left: 20px;
+        width: 710px;
     }
 
     /*largeur zone activité*/
@@ -464,6 +479,10 @@ h1{
     .blocActivitesVersionPortable{
         height: 590px;
     }
+    .dispositionActivitesSimpleBloc{
+        margin: 10px;
+        width: 530px;
+    }
 
     /*largeur zone activité*/
     .zoneActivites{
@@ -494,6 +513,10 @@ h1{
     }
     .blocActivitesVersionPortable{
         height: 550px;
+    }
+    .dispositionActivitesSimpleBloc{
+        margin: 10px;
+        width: 380px;
     }
 
     /*largeur zone activité*/

@@ -47,7 +47,7 @@ p{
 .sectionTitre{
     padding-left: 20px;
     padding-top: 30px;
-    padding-bottom: -10px;
+    padding-bottom: 0px;
 }
 
 
@@ -168,8 +168,6 @@ p{
     width: 600px;
     height: 50px;
 
-    padding: auto;
-
     margin: 40px;
 }
 
@@ -179,8 +177,6 @@ p{
     width: 50px;
     height: 50px;
     border-radius: 10px 0 0 10px;
-    padding-left: auto;
-    padding-right: auto;
 }
 
 /*couleur fond premiere icone sur barre recherche */
@@ -230,6 +226,7 @@ p{
 .zoneFiltre{
     display: flex;
     margin-left: 40px;
+    height: 40px;
 }
 
 .doubleFiltre{
@@ -237,19 +234,20 @@ p{
 }
 
 .motFiltre{
-    padding-top: 10px;
+    padding: 0px;
+    margin-top: 10px;
 }
 
 .nomBarreFiltre{
     margin-right: 90px;
-    margin-top: 15px;
+    margin-top: 0px;
 
     font-size: large;
     font-weight: bold;
 }
 .boutonFiltre{
     display: flex;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-right: 30px;
 
 
@@ -414,7 +412,7 @@ p{
         overflow-x : hidden;
     
         /* cadre */
-        border : 5px white solid;
+        border : 5px rgb(253, 252, 252) solid;
         border-radius: 30px;
     
         /* dimension */
@@ -425,7 +423,7 @@ p{
         padding-bottom: 0px; 
         overflow : hidden;
     
-        background-color: white;
+        background-color: #F8F8FF;
     }
     
     /* Dimension Image */
@@ -576,6 +574,9 @@ p{
     border-radius: 30px;
     overflow-x : hidden;
     box-shadow: 3px 3px rgba(153, 147, 147, 0.08);
+
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .dispositionActivitesDoubleBloc{
     display: flex;
@@ -585,7 +586,8 @@ p{
     overflow-x : hidden;
     box-shadow: 3px 3px rgba(153, 147, 147, 0.08);
 
-    margin: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* Dimension Image Activité */
