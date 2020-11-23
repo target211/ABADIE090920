@@ -435,17 +435,23 @@ h1{
     /*Taille zone activité*/
     .zoneActivites{
         height: 2200px; 
+        width: 750px;
     }
     .blocActivites{
         height: 300px;
+        width: 750px;
     }
     .blocActivitesVersionPortable{
         height: 700px;
+        justify-content: space-between;
+        
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     .dispositionActivitesSimpleBloc{
-        margin: 10px;
-        margin-left: 20px;
-        width: 710px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        width: 750px;
     }
 
     /*largeur zone activité*/
@@ -472,20 +478,23 @@ h1{
     /*Taille zone activité*/
     .zoneActivites{
         height: 1950px; 
+        width: 600px;
     }
     .blocActivites{
         height: 300px;
     }
     .blocActivitesVersionPortable{
         height: 590px;
+        width: 550px;
+        justify-content: space-between;
+
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-bottom: 0px;
     }
     .dispositionActivitesSimpleBloc{
-        margin: 10px;
-        width: 530px;
-    }
-
-    /*largeur zone activité*/
-    .zoneActivites{
+        margin-left: 10px;
+        margin-bottom: 0px;
         width: 550px;
     }
 
@@ -502,26 +511,28 @@ h1{
     }
 }
 
+
 @media screen and (max-width: 599px)
 {   
     /*Taille zone activité*/
     .zoneActivites{
-        height: 1800px; 
+        height: 1800px;
+        width: 400px; 
     }
     .blocActivites{
         height: 270px;
     }
     .blocActivitesVersionPortable{
         height: 550px;
+        justify-content: space-between;
+
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     .dispositionActivitesSimpleBloc{
-        margin: 10px;
+        margin-left: 10px;
+        margin-bottom: 0px;
         width: 380px;
-    }
-
-    /*largeur zone activité*/
-    .zoneActivites{
-        width: 400px;
     }
 
     /* Dimension Image Activité */
