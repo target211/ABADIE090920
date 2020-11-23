@@ -479,7 +479,7 @@ p{
 /* Dimension Image */
 .imageAnnonceFlottante{
     height: 145px;
-    width: 150px;
+    width: 170px;
     float: left;
 }
 
@@ -498,8 +498,11 @@ p{
     margin-right: 80px;
     font-size: 1.5em;
 }
-@media screen and (min-width: 1051px) and (max-width: 1400px)
+@media screen and (min-width: 1051px) and (max-width: 1530px)
 {
+    .zoneAnnoncePopulaire{
+        height: 1000px;
+    }
     .annoncePopulaire{
         /* flexbox */
         display: flex;
@@ -507,12 +510,12 @@ p{
         overflow-x : hidden;
     
         /* cadre */
-        border : 5px white solid;
+        border : 5px #FFFFFE solid;
         border-radius: 30px;
     
         /* dimension */
         margin-left: 10px;
-        height: 23%;
+        height: 140px;
         width: 90%;
         display: inline-block;   
         padding-bottom: 0px; 
@@ -523,7 +526,7 @@ p{
     /* Dimension Image */
     .imageAnnonceFlottante{
         height: 140px;
-        width: 140px;
+        width: 170px;
         float: left;
     }
     .sousTexteAnnoncePopulaire{

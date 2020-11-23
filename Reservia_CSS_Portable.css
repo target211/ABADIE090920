@@ -123,6 +123,16 @@ h1{
     color: #0065FC;
 }
 
+@media screen and (max-width: 650px)
+{
+    .menuNavigationOnglet a{
+        font-size: 1.2em;
+    }
+
+    .menuHebergement a{
+        margin-left: 20px;
+    }
+}
 
 /*--------------- Fin Menu Navigation ----------------------*/
 
@@ -148,13 +158,13 @@ h1{
 }
 
 .boutonRecherche{
-    width: 10%;
+    width: 50px;
 }
 
 /* active l'icone recherche */
 .fas.fa-search{
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-right: auto;
 
     font-size: large;
@@ -278,7 +288,7 @@ h1{
 
         /* dimension */
         width: 700px;
-        height: 320px;
+        height: auto;
 
         margin-left: auto;
         margin-right: auto;
@@ -286,7 +296,9 @@ h1{
 
     /* Dimension Image */
     .imageAnnonce{
-        height: 70%;
+        width: 100%;
+        height: auto;
+        max-height: 400px;
     }
 
     .sousTexteAnnonceHebergement{
@@ -302,7 +314,7 @@ h1{
 
         /* dimension */
         width: 500px;
-        height: 250px;
+        height: auto;
 
         margin-left: auto;
         margin-right: auto;
@@ -310,7 +322,9 @@ h1{
 
     /* Dimension Image */
     .imageAnnonce{
-        height: 70%;
+        width: 100%;
+        height: auto;
+        max-height: 300px;
     }
 
     .sousTexteAnnonceHebergement{
@@ -326,7 +340,7 @@ h1{
 
         /* dimension */
         width: 350px;
-        height: 250px;
+        height: auto;
 
         margin-left: auto;
         margin-right: auto;
@@ -334,7 +348,9 @@ h1{
 
     /* Dimension Image */
     .imageAnnonce{
-        height: 70%;
+        width: 100%;
+        height: auto;
+        max-height: 230px;
     }
 
 }
@@ -349,7 +365,7 @@ h1{
 
 /* La plus grande section Hebergement */
 .zoneAnnoncePopulaire{
-    width: 95%;
+    width: 97%;
     height: 34%;
     
     margin-left: auto;
@@ -366,12 +382,26 @@ h1{
 }
 
 .imageAnnonceFlottante{
-    width: 170px;
+    width: 220px;
     height: 170px; 
 }
 
 .sousTexteAnnoncePopulaire{
     padding-top: 20px;
+}
+
+@media screen and (max-width: 600px)
+{
+    .h3Annonce{
+        font-weight: bold;
+        display: inline;
+    }
+
+    .sousTexteAnnoncePopulaire h3{
+        font-size: medium;
+        margin: 2px 2px 2px 0%;
+        padding-top: 0px;
+    }
 }
 /* fin Zone Populaire -------------------------------------------------*/
 
@@ -434,24 +464,30 @@ h1{
 {
     /*Taille zone activité*/
     .zoneActivites{
-        height: 2200px; 
+        height: auto; 
         width: 750px;
     }
     .blocActivites{
-        height: 300px;
+        height: auto;
         width: 750px;
     }
     .blocActivitesVersionPortable{
-        height: 700px;
+        height: auto;
+        width: 750px;
         justify-content: space-between;
         
         margin-top: 0px;
         margin-bottom: 0px;
+        max-height: 900px;
+    }
+    .imageActivitesDuFortGrande{
+        max-height: 450px;
     }
     .dispositionActivitesSimpleBloc{
         margin-bottom: 0px;
         margin-left: 0px;
         width: 750px;
+        max-height: 450px;
     }
 
     /*largeur zone activité*/
@@ -461,13 +497,13 @@ h1{
 
     /* Dimension Image Activité */
     .imageActivites{
-        height: 350px;
+        height: auto;
         width: 750px;
     }
     .imageActivitesPortable{
         overflow-x : hidden;
         margin-bottom: 0px;
-        height: 350px;
+        height: auto;
         width: 750px;
     }
 }
@@ -477,14 +513,17 @@ h1{
 
     /*Taille zone activité*/
     .zoneActivites{
-        height: 1950px; 
+        height: auto; 
         width: 600px;
     }
     .blocActivites{
-        height: 300px;
+        height: auto;
+        max-height: 900px;
+        width: 600px;
     }
     .blocActivitesVersionPortable{
-        height: 590px;
+        height: auto;
+        max-height: 900px;
         width: 550px;
         justify-content: space-between;
 
@@ -496,6 +535,7 @@ h1{
         margin-left: 10px;
         margin-bottom: 0px;
         width: 550px;
+        max-height: 600px;
     }
 
     /* Dimension Image Activité */
@@ -516,14 +556,16 @@ h1{
 {   
     /*Taille zone activité*/
     .zoneActivites{
-        height: 1800px;
+        height: auto;
         width: 400px; 
     }
     .blocActivites{
-        height: 270px;
+        height: auto;
+        max-height: 600px;
     }
     .blocActivitesVersionPortable{
-        height: 550px;
+        height: auto;
+        max-height: 750px;
         justify-content: space-between;
 
         margin-top: 0px;
@@ -533,6 +575,8 @@ h1{
         margin-left: 10px;
         margin-bottom: 0px;
         width: 380px;
+        height: auto;
+        max-height: 350px;
     }
 
     /* Dimension Image Activité */
@@ -562,6 +606,7 @@ h1{
 
 .blocFooter{
     margin-bottom: 40px;
+    margin-right: 20px;
 }
 
 /* fin du footer --------------------------------------------------------*/
