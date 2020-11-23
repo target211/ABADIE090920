@@ -148,13 +148,13 @@ h1{
 }
 
 .boutonRecherche{
-    width: 10%;
+    width: 50px;
 }
 
 /* active l'icone recherche */
 .fas.fa-search{
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-right: auto;
 
     font-size: large;
