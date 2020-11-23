@@ -330,6 +330,8 @@ p{
     border-radius: 30px;
     width: 60%;
     height: 720px;
+    
+    margin-top: 10px;
 }
 
 /* Regroupe les annonces */
