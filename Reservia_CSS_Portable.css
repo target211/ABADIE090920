@@ -123,6 +123,17 @@ h1{
     color: #0065FC;
 }
 
+@media screen and (max-width: 650px)
+{
+    .menuNavigationOnglet a{
+        font-size: 1.2em;
+    }
+
+    .menuHebergement a{
+        margin-left: 20px;
+    }
+}
+
 
 /*--------------- Fin Menu Navigation ----------------------*/
 
