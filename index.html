@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Reservia_CSS.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" media="screen and (max-width: 1050px)" href="Reservia_CSS_Portable.css" />
+
+    <title>Site Reservia</title>
+</head> 
+
+<body>
+
+    <!-- HEADER  -->
+    <header>
+
+        <!--
+    Le bloc Navigation contient le logo, les onglets de navigation, la section de recherche et de filtre
+    Le logo et les onglets de navigation forment le 1er bloc
+    Tout ce qui concerne la recherche forme le 2e bloc
+    Tout ce qui concerne les filtres de recherche forme le 3e bloc
+    Un paragraphe est placé sous le 3e bloc
+-->
+        <!-- Menu Navigation -->
+        <nav class="menuNavigation">
+            <div class="logoReservia">
+                <img class="logoSite" src="image/logo/Reservia.png" alt="Logo du site Reservia"
+                    title="Logo du site Réservia" />
+            </div>
+            <!-- Onglet s'inscrire pour le portable -->
+            <div class="menuSInscrirePortable">
+                <a href="#SInscrire">S'inscrire</a>
+            </div>
+            <!-- Menu avec onglets alignés-->
+            <div class="menuNavigationOnglet">
+                <div class="menuSInscrireOrdi">
+                    <a href="#SInscrire">S'inscrire</a>
+                </div>
+                <div class="menuActivite">
+                    <a href="#activite">Activité</a>
+                </div>
+                <div class="menuHebergement">
+                    <a href="#hebergement">Hébergement</a>
+                </div>
+
+            </div>
+        </nav>
+        <!-- fin menu navigation -->
+
+        <!-- Header sans le menu nav -->
+        <!-- Texte description site -->
+        <div>
+            <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong> <br />
+                en plein centre ville ou en pleine nature</h1>
+        </div>
+
+        <!-- Zone Recherche -->
+        <section class="cadreRecherche">
+            <div class="iconeRecherche">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="boxRecherche">
+                <form method="post" action="traitement.php">
+                    <input type="search" name="recherche" placeholder="Marseille,France" />
+                </form>
+            </div>
+            <div class="boutonRecherche">
+                <i class="fas fa-search"></i>
+                <h4 class="titreBoutonRecherche">Recherche</h4>
+            </div>
+        </section>
+        <!-- fin zone recherche -->
+
+        <!-- Filtre recherche -->
+        <section class="zoneFiltre">
+            <div class="nomBarreFiltre">
+                <h4 class="motFiltre">Filtres</h4>
+            </div>
+            <div class="doubleFiltre">
+                <div class="boutonFiltre">
+                    <div class="iconeFiltre">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <p class="categorieFiltre">Économique</p>
+                </div>
+
+                <div class="boutonFiltre">
+                    <div class="iconeFiltre">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <p class="categorieFiltre">Familial</p>
+                </div>
+            </div>
+            <div class="boutonFiltre filtreRomantique">
+                <div class="iconeFiltre">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="categorieFiltre">Romantique</p>
+            </div>
+
+            <div class="boutonFiltre filtreAnimaux">
+                <div class="iconeFiltre">
+                    <i class="fas fa-dog"></i>
+                </div>
+                <p class="categorieFiltre">Animaux Autorisés</p>
+            </div>
+            <!-- fin zone filtre -->
+
+
+        </section>
+        <!-- fin bloc filtre -->
+
+
+        <!-- Texte supplémentaire -->
+        <div class="information">
+            <i class="fas fa-info-circle"></i>
+            <p>Plus de 500 logements sont disponible dans cette ville</p>
+        </div>
+
+    </header>
+
+    <!--
+    La zone hebergement rassemble 6 annonces indépendantes en ligne de 3 max
+    Chaque annonce est un lien vers une autre page
+    Zone divisé en 3:
+        - Titre
+        - zone annonce
+        - Afficher plus
+-->
+    <div class="placementBlocAnnonce">
+        <!-- Zone Hébergement -->
+        <section class="zoneAnnonceHebergement">
+            <h2 class="sectionTitre" id="hebergement">Hébergements à Marseille</h2>
+
+            <!-- Zone englobant les annonces sans le grand titre h2-->
+            <div class="blocAnnonceHebergement">
+                <!-- Annonce 1 -->
+                <article class="annonceHebergement">
+                    <a href="page_hebergement.html">
+                        <img class="imageAnnonce" src="image/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Image d'annonce" />
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Auberge de la Cannebière</h3>
+                            <p>Nuit à partir de <span class="enGras">25€</span></p>
+                            <!-- etoile de notation -->
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
+
+                            </div>
+
+                        </div>
+                    </a>
+                </article>
+                <!-- fin annonce 1 -->
+
+                <!-- Annonce 2 -->
+                <article class="annonceHebergement">
+                    <a href="page_hebergement.html">
+                        <img class="imageAnnonce" src="image/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                            alt="Image d'annonce" />
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Hôtel du port</h3>
+                            <p>Nuit à partir de 52<span class="enGras">€</span></p>
+                            <!-- etoile de notation -->
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Annonce 3 -->
+                <article class="annonceHebergement">
+                    <a href="page_hebergement.html">
+                        <img class="imageAnnonce" src="image/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                            alt="Image d'annonce" />
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Hôtel Les mouettes</h3>
+                            <p>Nuit à partir de 76<span class="enGras">€</span></p>
+                            <!-- etoile de notation -->
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Annonce 4 -->
+                <article class="annonceHebergement">
+                    <a href="page_hebergement.html">
+                        <img class="imageAnnonce" src="image/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                            alt="Image d'annonce" />
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Hôtel de la mer</h3>
+                            <p>Nuit à partir de 46<span class="enGras">€</span></p>
+                            <!-- etoile de notation -->
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
+                                <i class="fas fa-star grey"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Annonce 5 -->
+                <article class="annonceHebergement">
+                    <a href="page_hebergement.html">
+                        <img class="imageAnnonce" src="image/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                            alt="Image d'annonce" />
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Auberge Le Panier</h3>
+                            <p>Nuit à partir de <span class="enGras">23€</span></p>
+                            <!-- etoile de notation -->
+                            <div>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Annonce 6 -->
+                <article class="annonceHebergement">
+                    <a href="page_hebergement.html">
+                        <img class="imageAnnonce"
+                            src="image/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                            alt="Image d'annonce" />
+
+                        <div class="sousTexteAnnonceHebergement">
+                            <h3 class="h3Annonce">Hôtel chez Amina</h3>
+                            <p>Nuit à partir de 96<span class="enGras">€</span></p>
+                            <!-- etoile de notation -->
+                            <div>
+                                <i class="fas fa-star blue"> </i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star blue"></i>
+
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <p class="afficherPlus">Afficher plus</p>
+        </section>
+
+
+        <!--
+    La zone populaire rassemble 3 annonces indépendantes en colonne
+    Chaque annonce est un lien vers une autre page
+    Zone divisé en 2:
+    - Titre + icone
+    - zone annonce
+-->
+        <!-- Zone populaire -->
+        <section class="zoneAnnoncePopulaire">
+            <div>
+                <div class="titrePopulaire">
+                    <h2 class="sectionTitre">Les plus populaires</h2>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+
+
+                <!-- zone populaire sans le titre h2 -->
+                <div class="blocAnnoncePopulaire">
+                    <!-- Annonce 1 -->
+                    <article class="annoncePopulaire">
+                        <a href="page_hebergement.html">
+                            <img class="imageAnnonceFlottante"
+                                src="image/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                alt="Image d'annonce" />
+                            <div class="sousTexteAnnoncePopulaire">
+                                <h3 class="h3Annonce">Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de 128<span class="enGras">€</span></p>
+                                <!-- etoile de notation -->
+                                <div>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Annonce 2 -->
+                    <article class="annoncePopulaire">
+                        <a href="page_hebergement.html">
+                            <img class="imageAnnonceFlottante"
+                                src="image/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                                alt="Image d'annonce" />
+                            <div class="sousTexteAnnoncePopulaire">
+                                <h3 class="h3Annonce">Au coeur de l'eau<br />Chambres d'hôtes</h3>
+                                <p>Nuit à partir de 71<span class="enGras">€</span></p>
+                                <!-- etoile de notation -->
+                                <div>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star grey"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Annonce 3 -->
+                    <article class="annoncePopulaire">
+                        <a href="page_hebergement.html">
+                            <img class="imageAnnonceFlottante"
+                                src="image/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                                alt="Image d'annonce" />
+
+                            <div class="sousTexteAnnoncePopulaire">
+                                <h3 class="h3Annonce">Hôtel Tout bleu et <br />Blanc</h3>
+                                <p>Nuit à partir de 68<span class="enGras">€</span></p>
+                                <!-- etoile de notation -->
+                                <div>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star grey"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Zone Activité -->
+    <!-- 
+    Versioner en version PC, 2 blocs contenant une annonce, 2 blocs contenant 2 annonces
+    Version portable découpé en bloc unitaire, 6 blocs d'une annonce
+    Les doubles classes permettent d'avoir les blocs unitaires dans la version Portable
+    -->
+    <div class="zoneActivites">
+        <h2 class="sectionTitre" id="activite">Activités à Marseille</h2>
+
+        <!-- image selectionnable dans Activités-->
+        <div class="zoneActivites">
+            <div class="annonceActivites">
+
+
+
+                <!-- bloc a PC simple bloc-->
+                <article class="blocActivites">
+                    <div class="dispositionActivitesSimpleBloc">
+                        <img class="imageActivitesSimpleBloc imageActivitesPortable"
+                            src="image/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                            alt="Image d'annonce" />
+                        <div class="sousTexteActivites">
+                            <h3 class="h3Annonce">Vieux Port</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- bloc b PC double bloc/double activites -->
+                <article class="blocActivites blocActivitesVersionPortable">
+                    <!-- 1er bloc du double bloc -->
+                    <div class="dispositionActivitesDoubleBloc">
+                        <img class="imageActivitesDuFortGrande imageActivitesPortable"
+                            src="image/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image d'annonce" />
+                        <div class="sousTexteActivites">
+                            <h3 class="h3Annonce">Fort de Pomègues</h3>
+                        </div>
+                    </div>
+                    <!-- 2e bloc du double bloc -->
+                    <div class="dispositionActivitesDoubleBloc">
+                        <img class="imageActivitesDeFrioulPetite imageActivitesPortable"
+                            src="image/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image d'annonce" />
+                        <div class="sousTexteActivites">
+                            <h3 class="h3Annonce">Îles du Frioul</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- bloc c PC simple bloc-->
+                <article class="blocActivites">
+                    <div class="dispositionActivitesSimpleBloc">
+                        <img class="imageActivitesSimpleBloc imageActivitesPortable"
+                            src="image/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            alt="Image d'annonce" />
+                        <div class="sousTexteActivites">
+                            <h3 class="h3Annonce">Parc National des Calanques</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- bloc D PC double bloc/double activites -->
+                <article class="blocActivites blocActivitesVersionPortable">
+                    <!-- 1er bloc du double bloc -->
+                    <div class="dispositionActivitesDoubleBloc">
+                        <img class="imageActivitesDoubleBloc imageActivitesPortable"
+                            src="image/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                            alt="Image d'annonce" />
+                        <div class="sousTexteActivites">
+                            <h3 class="h3Annonce">Notre-Dame-de-la-Garde</h3>
+                        </div>
+                    </div>
+                    <!-- 2e bloc du double bloc -->
+                    <div class="dispositionActivitesDoubleBloc">
+                        <img class="imageActivitesDoubleBloc imageActivitesPortable"
+                            src="image/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image d'annonce" />
+                        <div class="sousTexteActivites">
+                            <h3 class="h3Annonce">Parc Longchamp</h3>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+<!--
+    Zone Footer rassemblant 3 blocs de paragraphe
+    Version PC, mise en page horizontale
+    Version Portable, mise en page verticale
+-->
+    <!-- Footer -->
+    <footer class="zoneFooter">
+        <section class="blocFooter">
+            <h4><strong>A propos</strong></h4>
+            <p>Fonctionnement du site</p>
+            <p>Conditions générales de vente</p>
+            <p>Données et confidentialité</p>
+        </section>
+
+        <section class="blocFooter">
+            <h4><strong>Nos hébergements</strong></h4>
+            <p>Charte qualité</p>
+            <p>Soumettre votre hôtel</p>
+        </section>
+
+        <section class="blocFooter">
+            <h4><strong>Assistance</strong></h4>
+            <p>Centre d'aide</p>
+            <p>Nous contacter</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
