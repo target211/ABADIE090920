@@ -500,8 +500,11 @@ p{
     margin-right: 80px;
     font-size: 1.5em;
 }
-@media screen and (min-width: 1051px) and (max-width: 1400px)
+@media screen and (min-width: 1051px) and (max-width: 1530px)
 {
+    .zoneAnnoncePopulaire{
+        height: 1000px;
+    }
     .annoncePopulaire{
         /* flexbox */
         display: flex;
@@ -514,13 +517,13 @@ p{
     
         /* dimension */
         margin-left: 10px;
-        height: 23%;
+        height: 140px;
         width: 90%;
         display: inline-block;   
         padding-bottom: 0px; 
         overflow : hidden;
     
-        background-color: #F2F2FF;
+        background-color: white;
     }
     /* Dimension Image */
     .imageAnnonceFlottante{
