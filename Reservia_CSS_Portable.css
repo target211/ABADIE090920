@@ -16,7 +16,7 @@
 /*----------------------- Menu Navigation -------------------------*/
 .logoReservia{
     width: 200px;
-    height: 100px;
+    height: auto;
 }
 
 h1{
@@ -398,9 +398,13 @@ h1{
     }
 
     .sousTexteAnnoncePopulaire h3{
-        font-size: medium;
+        font-size: 0.9em;
         margin: 2px 2px 2px 0%;
         padding-top: 0px;
+        margin-top: 0px;
+    }
+    .sousTexteAnnoncePopulaire p{
+        font-size: 0.9em;
     }
 }
 /* fin Zone Populaire -------------------------------------------------*/
