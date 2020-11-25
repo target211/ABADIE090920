@@ -503,10 +503,12 @@ h1{
     .imageActivites{
         height: auto;
         width: 746px;
+        margin-left: 1px;
     }
     .imageActivitesPortable{
         overflow-x : hidden;
         margin-bottom: 0px;
+        margin-left: 1px;
         height: auto;
         width: 746px;
     }
@@ -546,10 +548,12 @@ h1{
     .imageActivites{
         height: 400px;
         width: 546px;
+        margin-left: 1px;
     }
     .imageActivitesPortable{
         overflow-x : hidden;
         margin-bottom: 0px;
+        margin-left: 1px;
         height: 400px;
         width: 546px;
     }
@@ -587,10 +591,12 @@ h1{
     .imageActivites{
         height: 300px;
         width: 396px;
+        margin-left: 1px;
     }
     .imageActivitesPortable{
         overflow-x : hidden;
         margin-bottom: 0px;
+        margin-left: 1px;
         height: 300px;
         width: 396px;
     }
