@@ -502,13 +502,13 @@ h1{
     /* Dimension Image Activité */
     .imageActivites{
         height: auto;
-        width: 748px;
+        width: 746px;
     }
     .imageActivitesPortable{
         overflow-x : hidden;
         margin-bottom: 0px;
         height: auto;
-        width: 748px;
+        width: 746px;
     }
 }
 
@@ -545,13 +545,13 @@ h1{
     /* Dimension Image Activité */
     .imageActivites{
         height: 400px;
-        width: 548px;
+        width: 546px;
     }
     .imageActivitesPortable{
         overflow-x : hidden;
         margin-bottom: 0px;
         height: 400px;
-        width: 548px;
+        width: 546px;
     }
 }
 
@@ -586,13 +586,13 @@ h1{
     /* Dimension Image Activité */
     .imageActivites{
         height: 300px;
-        width: 398px;
+        width: 396px;
     }
     .imageActivitesPortable{
         overflow-x : hidden;
         margin-bottom: 0px;
         height: 300px;
-        width: 398px;
+        width: 396px;
     }
 }
 
