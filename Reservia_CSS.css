@@ -144,7 +144,9 @@ p{
         border-top: 3px white solid;
         padding-top: 9px;
     }
-
+    .menuSInscrireOrdi:hover{
+        border-top: 3px white solid;
+    }
     .menuSInscrireOrdi a{
         color: #0065FC;
         font-weight: bold;
@@ -258,7 +260,7 @@ p{
 }
 
 .boutonFiltre:hover{
-    box-shadow: 0px 0px 4px 1px rgba(0,0,0,.4);
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,.5);
     cursor : pointer;
     transition: box-shadow 0.5s;
 }
@@ -593,7 +595,7 @@ p{
     box-shadow: 3px 3px rgba(153, 147, 147, 0.08);
 
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 /* Dimension Image Activité */
