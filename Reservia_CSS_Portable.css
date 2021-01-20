@@ -6,7 +6,10 @@
     display: flex;
     flex-direction: column-reverse;
 }
-
+/* Toute la page --------------------------------------------------------------*/
+p{
+    font-size: 1.3em;
+}
 /* fin cadre general des sections ----------------------------------------------*/
 
 
@@ -17,6 +20,8 @@
 .logoReservia{
     width: 200px;
     height: auto;
+
+    margin-left: 20px;
 }
 
 h1{
@@ -43,7 +48,7 @@ h1{
 .menuSInscrirePortable{
     display: flex;
     margin-top: 20px;
-    margin-right: 20px;
+    margin-right: 40px;
     border-top: 3px white solid;
     padding-top: 9px;
 
@@ -64,6 +69,15 @@ h1{
 }
 
 
+.menuNavigation{
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 0px;
+    margin-right: 0px;
+
+    width: 100%;
+}
 
 .imageSiteEtOngletInscrire{
     display: flex;
@@ -83,6 +97,7 @@ h1{
 
 .menuNavigationOnglet a{
     font-size: 2em;
+    padding-right: 0px;
 }
 
 .menuHebergement{
@@ -94,7 +109,7 @@ h1{
 .menuHebergement a{
     color: grey;
     width: auto;
-    margin-left: 50px;
+    margin-left: 15%;
 }
 .menuHebergement:hover{
     border-top: 3px white solid;
@@ -106,6 +121,9 @@ h1{
 
 .menuActivite{
     border-bottom: 3px grey solid;
+
+    margin-left: 0px;
+    margin-right: 0px;
 
     width: 50%;
     padding-bottom: 20px;
@@ -129,9 +147,6 @@ h1{
         font-size: 1.2em;
     }
 
-    .menuHebergement a{
-        margin-left: 20px;
-    }
 }
 
 /*--------------- Fin Menu Navigation ----------------------*/
@@ -220,11 +235,11 @@ h1{
 }
 
 .filtreRomantique{
-    width: 150px;
+    width: 190px;
     margin-top: 15px;
 }
 .filtreAnimaux{
-    width: 210px;
+    width: 260px;
     margin-top: 15px;
 }
 
@@ -502,15 +517,13 @@ h1{
     /* Dimension Image Activité */
     .imageActivites{
         height: auto;
-        width: 746px;
-        margin-left: 1px;
+        width: 750px;
     }
     .imageActivitesPortable{
         overflow-x : hidden;
         margin-bottom: 0px;
-        margin-left: 1px;
         height: auto;
-        width: 746px;
+        width: 750px;
     }
 }
 
@@ -547,15 +560,13 @@ h1{
     /* Dimension Image Activité */
     .imageActivites{
         height: 400px;
-        width: 546px;
-        margin-left: 1px;
+        width: 550px;
     }
     .imageActivitesPortable{
         overflow-x : hidden;
         margin-bottom: 0px;
-        margin-left: 1px;
         height: 400px;
-        width: 546px;
+        width: 550px;
     }
 }
 
@@ -590,15 +601,13 @@ h1{
     /* Dimension Image Activité */
     .imageActivites{
         height: 300px;
-        width: 396px;
-        margin-left: 1px;
+        width: 400px;
     }
     .imageActivitesPortable{
         overflow-x : hidden;
         margin-bottom: 0px;
-        margin-left: 1px;
         height: 300px;
-        width: 396px;
+        width: 400px;
     }
 }
 
