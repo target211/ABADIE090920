@@ -144,9 +144,7 @@ p{
         border-top: 3px white solid;
         padding-top: 9px;
     }
-    .menuSInscrireOrdi:hover{
-        border-top: 3px white solid;
-    }
+
     .menuSInscrireOrdi a{
         color: #0065FC;
         font-weight: bold;
