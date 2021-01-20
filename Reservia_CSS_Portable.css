@@ -109,7 +109,7 @@ h1{
 .menuHebergement a{
     color: grey;
     width: auto;
-    margin-left: 15%;
+    margin-left: 18%;
 }
 .menuHebergement:hover{
     border-top: 3px white solid;
@@ -144,9 +144,12 @@ h1{
 @media screen and (max-width: 650px)
 {
     .menuNavigationOnglet a{
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
+    .menuHebergement a{
+        margin-left: 30%;
+    }
 }
 
 /*--------------- Fin Menu Navigation ----------------------*/
